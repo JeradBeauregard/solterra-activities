@@ -1,0 +1,1 @@
+# solterra-activities
