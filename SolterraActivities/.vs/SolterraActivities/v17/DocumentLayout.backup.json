@@ -3,12 +3,232 @@
   "WorkspaceRootPath": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Data\\Migrations\\20250329023901_AddHobbyMoodAndBridgeModels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20250329023901_AddHobbyMoodAndBridgeModels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\services\\activityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:services\\activityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\controllers\\useractivitypagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\useractivitypagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\interfaces\\iuseractivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:interfaces\\iuseractivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\controllers\\useractivitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\useractivitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\services\\moodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:services\\moodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\services\\hobbyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:services\\hobbyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\services\\useractivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:services\\useractivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\controllers\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\useractivitypage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\useractivitypage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\useractivitypage\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\useractivitypage\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\activitypage\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\activitypage\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\hobbypage\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\hobbypage\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\useractivitypage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\useractivitypage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\useractivitypage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\useractivitypage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\useractivitypage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\useractivitypage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\useractivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\useractivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\activitypage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\activitypage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\viewmodels\\activitymoodnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\viewmodels\\activitymoodnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\viewmodels\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\viewmodels\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\viewmodels\\useractivityedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\viewmodels\\useractivityedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\viewmodels\\useractivitynew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\viewmodels\\useractivitynew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\interfaces\\imoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:interfaces\\imoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\hobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\hobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\activitymood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\activitymood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\mood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\mood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\services\\activitymoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:services\\activitymoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\controllers\\activitypagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\activitypagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\controllers\\activitymoodpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\activitymoodpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\controllers\\activitymoodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\activitymoodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\controllers\\moodpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\moodpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\controllers\\moodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\moodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\controllers\\hobbypagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\hobbypagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\viewmodels\\activityedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\viewmodels\\activityedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\interfaces\\ihobbyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:interfaces\\ihobbyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\controllers\\hobbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\hobbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\activitypage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\activitypage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\activitypage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\activitypage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\activitypage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\activitypage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\viewmodels\\activitynew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\viewmodels\\activitynew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\viewmodels\\activitydetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\viewmodels\\activitydetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\interfaces\\iactivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:interfaces\\iactivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\moodpage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\moodpage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\moodpage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\moodpage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\hobbypage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\hobbypage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\hobbypage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\hobbypage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\hobbypage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\hobbypage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\hobbypage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\hobbypage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\viewmodels\\hobbydetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\viewmodels\\hobbydetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\moodpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\moodpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\moodpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\moodpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\views\\moodpage\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\moodpage\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\solterraactivities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:solterraactivities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\data\\migrations\\20250329023901_addhobbymoodandbridgemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:data\\migrations\\20250329023901_addhobbymoodandbridgemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,26 +241,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\mood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\mood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\hobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\hobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\activitymood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\activitymood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities\\solterraactivities\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,50 +250,336 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250329023901_AddHobbyMoodAndBridgeModels.cs",
-              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Data\\Migrations\\20250329023901_AddHobbyMoodAndBridgeModels.cs",
-              "RelativeDocumentMoniker": "Data\\Migrations\\20250329023901_AddHobbyMoodAndBridgeModels.cs",
-              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Data\\Migrations\\20250329023901_AddHobbyMoodAndBridgeModels.cs",
-              "RelativeToolTip": "Data\\Migrations\\20250329023901_AddHobbyMoodAndBridgeModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ActivityService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Services\\ActivityService.cs",
+              "RelativeDocumentMoniker": "Services\\ActivityService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Services\\ActivityService.cs",
+              "RelativeToolTip": "Services\\ActivityService.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAMwFEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:39:02.007Z",
+              "WhenOpened": "2025-04-01T04:40:10.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Activity.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Activity.cs",
+              "RelativeDocumentMoniker": "Models\\Activity.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Activity.cs",
+              "RelativeToolTip": "Models\\Activity.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T06:17:28.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Pet.cs",
-              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Pet.cs",
-              "RelativeDocumentMoniker": "Models\\Pet.cs",
-              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Pet.cs",
-              "RelativeToolTip": "Models\\Pet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Title": "UserActivityPageController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\UserActivityPageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserActivityPageController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\UserActivityPageController.cs",
+              "RelativeToolTip": "Controllers\\UserActivityPageController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAMwG4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:38:39.995Z",
+              "WhenOpened": "2025-04-01T07:19:15.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IUserActivityService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Interfaces\\IUserActivityService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUserActivityService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Interfaces\\IUserActivityService.cs",
+              "RelativeToolTip": "Interfaces\\IUserActivityService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:38:28.355Z",
+              "WhenOpened": "2025-04-01T07:13:54.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserActivityController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\UserActivityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserActivityController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\UserActivityController.cs",
+              "RelativeToolTip": "Controllers\\UserActivityController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:17:31.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MoodService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Services\\MoodService.cs",
+              "RelativeDocumentMoniker": "Services\\MoodService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Services\\MoodService.cs",
+              "RelativeToolTip": "Services\\MoodService.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAMwFYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:52:03.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "HobbyService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Services\\HobbyService.cs",
+              "RelativeDocumentMoniker": "Services\\HobbyService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Services\\HobbyService.cs",
+              "RelativeToolTip": "Services\\HobbyService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAA7wFAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T04:17:47.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserActivityService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Services\\UserActivityService.cs",
+              "RelativeDocumentMoniker": "Services\\UserActivityService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Services\\UserActivityService.cs",
+              "RelativeToolTip": "Services\\UserActivityService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:12:01.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:42:15.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:55:04.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\UserActivityPage\\List.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserActivityPage\\List.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\UserActivityPage\\List.cshtml",
+              "RelativeToolTip": "Views\\UserActivityPage\\List.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T07:41:22.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ActivityController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\ActivityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ActivityController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\ActivityController.cs*",
+              "RelativeToolTip": "Controllers\\ActivityController.cs*",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAgwA0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T04:30:09.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ConfirmDelete.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\UserActivityPage\\ConfirmDelete.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserActivityPage\\ConfirmDelete.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\UserActivityPage\\ConfirmDelete.cshtml",
+              "RelativeToolTip": "Views\\UserActivityPage\\ConfirmDelete.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T07:40:12.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ConfirmDelete.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\HobbyPage\\ConfirmDelete.cshtml",
+              "RelativeDocumentMoniker": "Views\\HobbyPage\\ConfirmDelete.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\HobbyPage\\ConfirmDelete.cshtml",
+              "RelativeToolTip": "Views\\HobbyPage\\ConfirmDelete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T04:25:13.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\UserActivityPage\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserActivityPage\\Details.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\UserActivityPage\\Details.cshtml",
+              "RelativeToolTip": "Views\\UserActivityPage\\Details.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwCUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T07:39:52.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\UserActivityPage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserActivityPage\\Edit.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\UserActivityPage\\Edit.cshtml",
+              "RelativeToolTip": "Views\\UserActivityPage\\Edit.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T07:39:32.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\UserActivityPage\\New.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserActivityPage\\New.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\UserActivityPage\\New.cshtml",
+              "RelativeToolTip": "Views\\UserActivityPage\\New.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T07:30:23.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ConfirmDelete.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\ActivityPage\\ConfirmDelete.cshtml",
+              "RelativeDocumentMoniker": "Views\\ActivityPage\\ConfirmDelete.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\ActivityPage\\ConfirmDelete.cshtml",
+              "RelativeToolTip": "Views\\ActivityPage\\ConfirmDelete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T05:29:40.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ActivityMoodNew.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\ActivityMoodNew.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ActivityMoodNew.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\ActivityMoodNew.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ActivityMoodNew.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:25:24.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserActivity.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\UserActivity.cs",
+              "RelativeDocumentMoniker": "Models\\UserActivity.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\UserActivity.cs",
+              "RelativeToolTip": "Models\\UserActivity.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAA1wC4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T02:30:36.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\ActivityPage\\New.cshtml",
+              "RelativeDocumentMoniker": "Views\\ActivityPage\\New.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\ActivityPage\\New.cshtml",
+              "RelativeToolTip": "Views\\ActivityPage\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T05:32:11.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserActivityEdit.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\UserActivityEdit.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\UserActivityEdit.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\UserActivityEdit.cs",
+              "RelativeToolTip": "Models\\ViewModels\\UserActivityEdit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:21:25.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserActivityNew.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\UserActivityNew.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\UserActivityNew.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\UserActivityNew.cs",
+              "RelativeToolTip": "Models\\ViewModels\\UserActivityNew.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:20:45.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ErrorViewModel.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T04:08:26.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ActivityMood.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ActivityMood.cs",
+              "RelativeDocumentMoniker": "Models\\ActivityMood.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ActivityMood.cs",
+              "RelativeToolTip": "Models\\ActivityMood.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAuwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T02:27:40.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "Item.cs",
               "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Item.cs",
               "RelativeDocumentMoniker": "Models\\Item.cs",
@@ -106,20 +592,434 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserActivity.cs",
-              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\UserActivity.cs",
-              "RelativeDocumentMoniker": "Models\\UserActivity.cs",
-              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\UserActivity.cs",
-              "RelativeToolTip": "Models\\UserActivity.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBMAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 27,
+              "Title": "Mood.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Mood.cs",
+              "RelativeDocumentMoniker": "Models\\Mood.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Mood.cs",
+              "RelativeToolTip": "Models\\Mood.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:30:36.325Z",
+              "WhenOpened": "2025-03-29T02:27:01.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 24,
+              "Title": "IMoodService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Interfaces\\IMoodService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IMoodService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Interfaces\\IMoodService.cs",
+              "RelativeToolTip": "Interfaces\\IMoodService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:50:39.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ActivityMoodService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Services\\ActivityMoodService.cs",
+              "RelativeDocumentMoniker": "Services\\ActivityMoodService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Services\\ActivityMoodService.cs",
+              "RelativeToolTip": "Services\\ActivityMoodService.cs",
+              "ViewState": "AgIAABcBAAAAAAAAAAAQwCQBAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T05:40:07.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Hobby.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Hobby.cs",
+              "RelativeDocumentMoniker": "Models\\Hobby.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Hobby.cs",
+              "RelativeToolTip": "Models\\Hobby.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA+wCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T02:24:28.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ActivityPageController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\ActivityPageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ActivityPageController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\ActivityPageController.cs",
+              "RelativeToolTip": "Controllers\\ActivityPageController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwDUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T05:09:20.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ActivityMoodPageController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\ActivityMoodPageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ActivityMoodPageController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\ActivityMoodPageController.cs",
+              "RelativeToolTip": "Controllers\\ActivityMoodPageController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAIwGkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T06:31:39.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ActivityMoodController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\ActivityMoodController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ActivityMoodController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\ActivityMoodController.cs",
+              "RelativeToolTip": "Controllers\\ActivityMoodController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvyUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T05:34:09.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MoodPageController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\MoodPageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MoodPageController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\MoodPageController.cs",
+              "RelativeToolTip": "Controllers\\MoodPageController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAADwvygAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:59:07.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "MoodController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\MoodController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MoodController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\MoodController.cs",
+              "RelativeToolTip": "Controllers\\MoodController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAADwv1AAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:47:17.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "HobbyPageController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\HobbyPageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HobbyPageController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\HobbyPageController.cs",
+              "RelativeToolTip": "Controllers\\HobbyPageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T04:12:44.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ActivityEdit.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\ActivityEdit.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ActivityEdit.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\ActivityEdit.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ActivityEdit.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwAcAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T05:21:49.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IHobbyService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Interfaces\\IHobbyService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IHobbyService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Interfaces\\IHobbyService.cs",
+              "RelativeToolTip": "Interfaces\\IHobbyService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA5wBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T04:14:51.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "HobbyController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\HobbyController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HobbyController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Controllers\\HobbyController.cs",
+              "RelativeToolTip": "Controllers\\HobbyController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAADwvzkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T04:10:43.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\ActivityPage\\List.cshtml",
+              "RelativeDocumentMoniker": "Views\\ActivityPage\\List.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\ActivityPage\\List.cshtml",
+              "RelativeToolTip": "Views\\ActivityPage\\List.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T05:31:00.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\ActivityPage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\ActivityPage\\Edit.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\ActivityPage\\Edit.cshtml",
+              "RelativeToolTip": "Views\\ActivityPage\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T05:30:24.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\ActivityPage\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\ActivityPage\\Details.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\ActivityPage\\Details.cshtml*",
+              "RelativeToolTip": "Views\\ActivityPage\\Details.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T05:30:01.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ActivityNew.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\ActivityNew.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ActivityNew.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\ActivityNew.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ActivityNew.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T05:22:58.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ActivityDetails.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\ActivityDetails.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ActivityDetails.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\ActivityDetails.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ActivityDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T05:21:40.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\MoodPage\\List.cshtml",
+              "RelativeDocumentMoniker": "Views\\MoodPage\\List.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\MoodPage\\List.cshtml",
+              "RelativeToolTip": "Views\\MoodPage\\List.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAnwBkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T04:01:01.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IActivityService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Interfaces\\IActivityService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IActivityService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Interfaces\\IActivityService.cs",
+              "RelativeToolTip": "Interfaces\\IActivityService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T04:57:38.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\MoodPage\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\MoodPage\\Details.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\MoodPage\\Details.cshtml",
+              "RelativeToolTip": "Views\\MoodPage\\Details.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T04:00:48.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\HobbyPage\\New.cshtml",
+              "RelativeDocumentMoniker": "Views\\HobbyPage\\New.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\HobbyPage\\New.cshtml",
+              "RelativeToolTip": "Views\\HobbyPage\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T04:28:42.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\HobbyPage\\List.cshtml",
+              "RelativeDocumentMoniker": "Views\\HobbyPage\\List.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\HobbyPage\\List.cshtml",
+              "RelativeToolTip": "Views\\HobbyPage\\List.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T04:27:36.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\HobbyPage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\HobbyPage\\Edit.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\HobbyPage\\Edit.cshtml",
+              "RelativeToolTip": "Views\\HobbyPage\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T04:27:19.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\HobbyPage\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\HobbyPage\\Details.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\HobbyPage\\Details.cshtml",
+              "RelativeToolTip": "Views\\HobbyPage\\Details.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAnwA4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T04:25:32.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "HobbyDetails.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\HobbyDetails.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\HobbyDetails.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ViewModels\\HobbyDetails.cs",
+              "RelativeToolTip": "Models\\ViewModels\\HobbyDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T04:16:57.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\MoodPage\\New.cshtml",
+              "RelativeDocumentMoniker": "Views\\MoodPage\\New.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\MoodPage\\New.cshtml*",
+              "RelativeToolTip": "Views\\MoodPage\\New.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T04:01:06.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\MoodPage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\MoodPage\\Edit.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\MoodPage\\Edit.cshtml*",
+              "RelativeToolTip": "Views\\MoodPage\\Edit.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T04:00:55.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ConfirmDelete.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\MoodPage\\ConfirmDelete.cshtml",
+              "RelativeDocumentMoniker": "Views\\MoodPage\\ConfirmDelete.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Views\\MoodPage\\ConfirmDelete.cshtml*",
+              "RelativeToolTip": "Views\\MoodPage\\ConfirmDelete.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T04:00:28.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "SolterraActivities",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\SolterraActivities.csproj",
+              "RelativeDocumentMoniker": "SolterraActivities.csproj",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\SolterraActivities.csproj*",
+              "RelativeToolTip": "SolterraActivities.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-01T03:49:20.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "20250329023901_AddHobbyMoodAndBridgeModels.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Data\\Migrations\\20250329023901_AddHobbyMoodAndBridgeModels.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250329023901_AddHobbyMoodAndBridgeModels.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Data\\Migrations\\20250329023901_AddHobbyMoodAndBridgeModels.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250329023901_AddHobbyMoodAndBridgeModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T02:39:02.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T02:38:28.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Pet.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Pet.cs",
+              "RelativeDocumentMoniker": "Models\\Pet.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Pet.cs",
+              "RelativeToolTip": "Models\\Pet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T02:38:39.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
               "Title": "ServiceResponse.cs",
               "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ServiceResponse.cs",
               "RelativeDocumentMoniker": "Models\\ServiceResponse.cs",
@@ -127,60 +1027,7 @@
               "RelativeToolTip": "Models\\ServiceResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:30:19.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ActivityMood.cs",
-              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ActivityMood.cs",
-              "RelativeDocumentMoniker": "Models\\ActivityMood.cs",
-              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\ActivityMood.cs",
-              "RelativeToolTip": "Models\\ActivityMood.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBgAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:27:40.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Mood.cs",
-              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Mood.cs",
-              "RelativeDocumentMoniker": "Models\\Mood.cs",
-              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Mood.cs",
-              "RelativeToolTip": "Models\\Mood.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:27:01.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Hobby.cs",
-              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Hobby.cs",
-              "RelativeDocumentMoniker": "Models\\Hobby.cs",
-              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Hobby.cs",
-              "RelativeToolTip": "Models\\Hobby.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:24:28.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Activity.cs",
-              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Activity.cs",
-              "RelativeDocumentMoniker": "Models\\Activity.cs",
-              "ToolTip": "D:\\webdev-projects\\solterra-activities\\SolterraActivities\\Models\\Activity.cs",
-              "RelativeToolTip": "Models\\Activity.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:13:09.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T02:30:19.121Z"
             }
           ]
         }

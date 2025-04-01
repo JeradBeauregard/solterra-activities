@@ -1,0 +1,45 @@
+﻿@model SolterraActivities.Models.UserActivityDto
+
+@{
+    ViewData["Title"] = "User Activity Details";
+}
+
+<h2>User Activity Details</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>User</th>
+        <td>@Model.Username</td>
+    </tr>
+    <tr>
+        <th>Activity</th>
+        <td>@Model.ActivityName</td>
+    </tr>
+    <tr>
+        <th>Activity Date</th>
+        <td>@Model.ActivityDate?.ToShortDateString()</td>
+    </tr>
+    <tr>
+        <th>Duration</th>
+        <td>@Model.ActivityDurationInHours hours</td>
+    </tr>
+    <tr>
+        <th>Cost</th>
+        <td>@Model.ActivityCost sol shards</td>
+    </tr>
+    <tr>
+        <th>Pet</th>
+        <td>@Model.PetName</td>
+    </tr>
+    <tr>
+        <th>Pet Mood After Activity</th>
+        <td>@Model.PetMoodAfterActivity</td>
+    </tr>
+    <tr>
+        <th>Item Gained</th>
+        <td>@Model.ItemGained</td>
+    </tr>
+</table>
+
+<a asp-action="Edit" asp-route-id="@Model.UserActivityId" class="btn btn-primary">Edit</a>
+<a asp-action="List" class="btn btn-secondary">Back to List</a>

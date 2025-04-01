@@ -1,0 +1,125 @@
+﻿@model ActivityDetails
+
+@{
+    ViewData["Title"] = "Edit Activity";
+}
+
+<h1>Edit Activity</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form method="POST" asp-action="Update" asp-route-id="@Model.Activity.ActivityId">
+            <input type="hidden" name="ActivityId" value="@Model.Activity.ActivityId" />
+
+            <div class="form-group">
+                <label for="ActivityName">Activity Name:</label>
+                <input type="text" name="ActivityName" value="@Model.Activity.ActivityName" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+                <label for="HobbyId">Hobby:</label>
+                <select name="HobbyId" class="form-control">
+                    @foreach (var hobby in Model.HobbyOptions)
+                    {
+                        <option value="@hobby.HobbyId" selected="@(hobby.HobbyId == Model.Activity.HobbyId ? "selected" : null)">
+                            @hobby.HobbyName
+                        </option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ActivityDate">Date:</label>
+                <input type="date" name="ActivityDate" value="@Model.Activity.ActivityDate.ToString("yyyy-MM-dd")" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+                <label for="ActivityLocation">Location:</label>
+                <input type="text" name="ActivityLocation" value="@Model.Activity.ActivityLocation" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="DurationinHours">Duration (hours):</label>
+                <input type="number" step="0.1" name="DurationinHours" value="@Model.Activity.DurationinHours" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="ActivityCost">Cost ($):</label>
+                <input type="number" step="0.01" name="ActivityCost" value="@Model.Activity.ActivityCost" class="form-control" />
+            </div>
+
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Save Changes" class="btn btn-primary" />
+                <a asp-action="Details" asp-route-id="@Model.Activity.ActivityId" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="col-md-6">
+        <h3 class="mt-4">Moods</h3>
+        @if (Model.ActivityMoods.Any())
+        {
+            <ul id="moodList">
+                @foreach (var mood in Model.ActivityMoods)
+                {
+                    <li id="mood-@mood.ActivityMoodId">
+                  
+                            <form class="update-mood-form" method="POST" asp-action="UpdateActivityMood" asp-route-id="@mood.ActivityMoodId" style="display: inline;"  >
+                                <input type="hidden" name="ActivityMoodId" value="@mood.ActivityMoodId" />
+                                <input type="hidden" name="ActivityId" value="@Model.Activity.ActivityId" />
+                                <input type="hidden" name="MoodId" value="@mood.MoodId" />
+
+                                @mood.MoodName - Before:
+                                <input type="number" name="BeforeIntensity" value="@mood.MoodIntensityBefore" min="0" max="10" style="width: 50px;" />
+                                | After:
+                                <input type="number" name="AfterIntensity" value="@mood.MoodIntensityAfter" min="0" max="10" style="width: 50px;" />
+
+                            
+                            </form>
+
+                            <form method="POST" asp-action="UnlinkMood" style="display: inline;">
+                                <input type="hidden" name="ActivityMoodId" value="@mood.ActivityMoodId" />
+                                <input type="hidden" name="ActivityId" value="@Model.Activity.ActivityId" />
+                                <input type="hidden" name="MoodId" value="@mood.MoodId" />
+                                <button type="submit" class="btn btn-sm btn-danger">Remove</button>
+                            </form>
+
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No moods recorded for this Activity.</p>
+        }
+
+        <h4>Add a Mood</h4>
+        <form method="POST" asp-action="LinkMood">
+            <select name="moodId" class="form-control">
+                @foreach (var mood in Model.MoodOptions)
+                {
+                    <option value="@mood.MoodId">@mood.MoodName</option>
+                }
+            </select>
+
+            <label for="BeforeIntensity">Intensity Before:</label>
+            <input type="number" name="BeforeIntensity" min="0" max="10" style="width: 50px;" />
+
+            <label for="AfterIntensity">Intensity After:</label>
+            <input type="number" name="AfterIntensity" min="0" max="10" style="width: 50px;" />
+
+            <input type="hidden" name="activityId" value="@Model.Activity.ActivityId" />
+            <input type="submit" value="Add Mood" class="btn btn-primary" />
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+

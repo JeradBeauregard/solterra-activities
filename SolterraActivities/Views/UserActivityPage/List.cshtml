@@ -1,0 +1,52 @@
+﻿@model IEnumerable<SolterraActivities.Models.UserActivityDto>
+
+@{
+    ViewData["Title"] = "User Activity Log";
+}
+
+<h2>User Activities</h2>
+
+<a asp-action="New" class="btn btn-success mb-3">+ Log New User Activity</a>
+
+@if (!Model.Any())
+{
+    <p>No user activities have been logged yet.</p>
+}
+else
+{
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>User</th>
+                <th>Activity</th>
+                <th>Date</th>
+                <th>Duration</th>
+                <th>Cost</th>
+                <th>Pet</th>
+                <th>Mood After</th>
+                <th>Item Gained</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ua in Model)
+            {
+                <tr>
+                    <td>@ua.Username</td>
+                    <td>@ua.ActivityName</td>
+                    <td>@ua.ActivityDate?.ToShortDateString()</td>
+                    <td>@ua.ActivityDurationInHours hours</td>
+                    <td>@ua.ActivityCost sol shards</td>
+                    <td>@ua.PetName</td>
+                    <td>@ua.PetMoodAfterActivity</td>
+                    <td>@ua.ItemGained</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@ua.UserActivityId" class="btn btn-sm btn-info">Details</a>
+                        <a asp-action="Edit" asp-route-id="@ua.UserActivityId" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-action="ConfirmDelete" asp-route-id="@ua.UserActivityId" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

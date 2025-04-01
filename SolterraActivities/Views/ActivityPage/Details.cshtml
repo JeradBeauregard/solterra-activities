@@ -1,0 +1,23 @@
+﻿@model ActivityDetails
+
+
+<h1>@Model.Activity.ActivityName</h1>
+
+
+<p><strong>Hobby:</strong> @Model.Activity.HobbyName</p>
+<p><strong>Date:</strong> @Model.Activity.ActivityDate.ToString("MMMM dd, yyyy")</p>
+<p><strong>Location:</strong> @Model.Activity.ActivityLocation</p>
+<p><strong>Duration:</strong> @Model.Activity.DurationinHours hours</p>
+<p><strong>Cost:</strong> $@Model.Activity.ActivityCost</p>
+
+<h3>Moods</h3>
+<ul>
+    @foreach (var mood in Model.ActivityMoods)
+    {
+        <li>@mood.MoodName - Before: @mood.MoodIntensityBefore | After: @mood.MoodIntensityAfter</li>
+    }
+</ul>
+
+<a asp-action="Edit" asp-route-id="@Model.Activity.ActivityId" class="btn btn-warning">Edit</a>
+<a asp-action="ConfirmDelete" asp-route-id="@Model.Activity.ActivityId" class="btn btn-danger">Delete</a>
+<a asp-action="List" class="btn btn-secondary">Back to List</a>

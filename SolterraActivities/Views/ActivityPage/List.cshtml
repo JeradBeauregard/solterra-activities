@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ActivityDto>
+
+@{
+    ViewData["Title"] = "Activities";
+}
+
+<h1>Activities</h1>
+<div>
+    <a href="/ActivityPage/New" class="btn btn-primary">Add New Activity</a>
+
+</div>
+
+<div>
+    <a href="/Home/Index" class="btn btn-secondary">Back to Dashboard</a>
+</div>
+
+
+<div class="card">
+
+    @foreach (var activity in Model)
+    {
+        <div class="card-body">
+            <h3 class="card-title">
+                <a href="/ActivityPage/Details/@activity.ActivityId">@activity.ActivityName</a>
+            </h3>
+            <div class="card-text">
+                <p><strong>Hobby:</strong> @activity.HobbyName</p>
+                <p><strong>Date:</strong> @activity.ActivityDate.ToString("MMMM dd, yyyy")</p>
+                <p><strong>Location:</strong> @activity.ActivityLocation</p>
+                <p><strong>Duration:</strong> @activity.DurationinHours hours</p>
+                <p><strong>Cost:</strong> $@activity.ActivityCost</p>
+            </div>
+      
+        </div>
+    }
+</div>
+
+
