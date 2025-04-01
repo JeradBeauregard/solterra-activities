@@ -1,0 +1,32 @@
+﻿@model SolterraActivities.Models.ViewModels.HobbyDetails
+
+@{
+    ViewData["Title"] = "Hobby Details";
+}
+
+<h1>@Model.Hobby.HobbyName</h1>
+
+<h3>Statistics</h3>
+<ul>
+    <li>Total Activities: @Model.Hobby.NumberofActivities</li>
+    <li>Total Hours Spent: @Model.Hobby.HoursSpent</li>
+    
+</ul>
+<h3>Activities</h3>
+<ul>
+    @foreach (var activity in Model.HobbyActivities)
+    {
+        <li>
+            <p>@activity.ActivityDate.ToString("MMMM dd, yyyy") - <a href="/ActivityPage/Details/@activity.ActivityId">@activity.ActivityName</a> </p>
+            
+        </li>
+    }
+</ul>
+
+
+
+<div class="mt-3">
+    <a asp-action="Edit" asp-route-id="@Model.Hobby.HobbyId" class="btn btn-warning">Edit</a>
+    <a asp-action="ConfirmDelete" asp-route-id="@Model.Hobby.HobbyId" class="btn btn-danger">Delete</a>
+    <a asp-action="List" class="btn btn-secondary">Back to List</a>
+</div>
