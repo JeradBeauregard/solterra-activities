@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using SolterraActivities.Models;
+using SolterraActivities.Models.ViewModels;
 using System.Diagnostics;
 
 namespace SolterraActivities.Controllers

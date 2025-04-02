@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SolterraActivities.Models
 {
@@ -9,7 +10,8 @@ namespace SolterraActivities.Models
 
         // the user who participated in the activity
         public required virtual User? User { get; set; }
-        public int UserId { get; set; }
+        [ForeignKey("User")]
+		public int UserId { get; set; }
 
         // the activity that the user participated in
         public required virtual Activity? Activity { get; set; }
@@ -17,12 +19,14 @@ namespace SolterraActivities.Models
 
         // the pet that the user brought with them to the activity
         public required virtual Pet? Pet { get; set; }
-        public int PetId { get; set; }
+        [ForeignKey("Pet")]
+		public int PetId { get; set; }
 
         // participating in activities will allow users to gain an item
         // this is the item that the user gained from the activity
         public required virtual Item? Item { get; set; }
-        public int ItemId { get; set; }
+        [ForeignKey("Item")]
+		public int ItemId { get; set; }
 
 
     }

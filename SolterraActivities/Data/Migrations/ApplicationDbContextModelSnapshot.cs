@@ -224,6 +224,330 @@ namespace SolterraActivities.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("SolterraActivities.Models.Activity", b =>
+                {
+                    b.Property<int>("ActivityId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ActivityId"));
+
+                    b.Property<decimal>("ActivityCost")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("ActivityDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ActivityImagePath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ActivityLocation")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ActivityName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("DurationInHours")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<bool>("HasImage")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("HobbyId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ActivityId");
+
+                    b.HasIndex("HobbyId");
+
+                    b.ToTable("Activities");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.ActivityMood", b =>
+                {
+                    b.Property<int>("ActivityMoodId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ActivityMoodId"));
+
+                    b.Property<int>("ActivityId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MoodId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MoodIntensityAfter")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MoodIntensityBefore")
+                        .HasColumnType("int");
+
+                    b.HasKey("ActivityMoodId");
+
+                    b.HasIndex("ActivityId");
+
+                    b.HasIndex("MoodId");
+
+                    b.ToTable("ActivityMoods");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.Hobby", b =>
+                {
+                    b.Property<int>("HobbyId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HobbyId"));
+
+                    b.Property<string>("HobbyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("HobbyId");
+
+                    b.ToTable("Hobbies");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.Inventory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ItemId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Inventory");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.Item", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("HasPic")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PicPath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Value")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Items");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.ItemType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ItemTypes");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.ItemxType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TypeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ItemId");
+
+                    b.HasIndex("TypeId");
+
+                    b.ToTable("ItemxTypes");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.Mood", b =>
+                {
+                    b.Property<int>("MoodId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MoodId"));
+
+                    b.Property<string>("MoodName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("MoodId");
+
+                    b.ToTable("Moods");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.Pet", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("agility")
+                        .HasColumnType("int");
+
+                    b.Property<int>("defence")
+                        .HasColumnType("int");
+
+                    b.Property<int>("health")
+                        .HasColumnType("int");
+
+                    b.Property<int>("hunger")
+                        .HasColumnType("int");
+
+                    b.Property<int>("intelligence")
+                        .HasColumnType("int");
+
+                    b.Property<int>("level")
+                        .HasColumnType("int");
+
+                    b.Property<int>("moood")
+                        .HasColumnType("int");
+
+                    b.Property<int>("species_id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("strength")
+                        .HasColumnType("int");
+
+                    b.Property<int>("userId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Pets");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.Species", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Species");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("InventorySpace")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SolShards")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.UserActivity", b =>
+                {
+                    b.Property<int>("UserActivityId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserActivityId"));
+
+                    b.Property<int>("ActivityId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PetId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserActivityId");
+
+                    b.HasIndex("ActivityId");
+
+                    b.HasIndex("ItemId");
+
+                    b.HasIndex("PetId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserActivities");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -273,6 +597,129 @@ namespace SolterraActivities.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.Activity", b =>
+                {
+                    b.HasOne("SolterraActivities.Models.Hobby", "Hobby")
+                        .WithMany("Activities")
+                        .HasForeignKey("HobbyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Hobby");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.ActivityMood", b =>
+                {
+                    b.HasOne("SolterraActivities.Models.Activity", "Activity")
+                        .WithMany("ActivityMoods")
+                        .HasForeignKey("ActivityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SolterraActivities.Models.Mood", "Mood")
+                        .WithMany()
+                        .HasForeignKey("MoodId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Activity");
+
+                    b.Navigation("Mood");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.Inventory", b =>
+                {
+                    b.HasOne("SolterraActivities.Models.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SolterraActivities.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Item");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.ItemxType", b =>
+                {
+                    b.HasOne("SolterraActivities.Models.Item", "Item")
+                        .WithMany("ItemxType")
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SolterraActivities.Models.ItemType", "ItemType")
+                        .WithMany("ItemXTypes")
+                        .HasForeignKey("TypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Item");
+
+                    b.Navigation("ItemType");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.UserActivity", b =>
+                {
+                    b.HasOne("SolterraActivities.Models.Activity", "Activity")
+                        .WithMany()
+                        .HasForeignKey("ActivityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SolterraActivities.Models.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SolterraActivities.Models.Pet", "Pet")
+                        .WithMany()
+                        .HasForeignKey("PetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SolterraActivities.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Activity");
+
+                    b.Navigation("Item");
+
+                    b.Navigation("Pet");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.Activity", b =>
+                {
+                    b.Navigation("ActivityMoods");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.Hobby", b =>
+                {
+                    b.Navigation("Activities");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.Item", b =>
+                {
+                    b.Navigation("ItemxType");
+                });
+
+            modelBuilder.Entity("SolterraActivities.Models.ItemType", b =>
+                {
+                    b.Navigation("ItemXTypes");
                 });
 #pragma warning restore 612, 618
         }
