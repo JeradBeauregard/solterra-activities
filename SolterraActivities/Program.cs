@@ -4,6 +4,7 @@ using SolterraActivities.Data;
 using SolterraActivities.Interfaces;
 using SolterraActivities.Services;
 using Microsoft.OpenApi.Models;
+using SolterraActivities.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -27,6 +28,12 @@ builder.Services.AddScoped<IMoodService, MoodService>();
 builder.Services.AddScoped<IActivityService, ActivityService>();
 builder.Services.AddScoped<IActivityMoodService, ActivityMoodService>();
 builder.Services.AddScoped<IUserActivityService, UserActivityService>();
+
+// Associate service interfaces with their implementations
+builder.Services.AddScoped<IInventoryService, InventoryService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IItemService, ItemService>();
+builder.Services.AddScoped<IItemTypesService, ItemTypesService>();
 
 
 

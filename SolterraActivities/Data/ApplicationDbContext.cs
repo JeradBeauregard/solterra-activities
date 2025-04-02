@@ -26,5 +26,19 @@ namespace SolterraActivities.Data
 
         // creating a UserActivities table from the model "UserActivity" - singular useractivity referring to one instance of that model
         public DbSet<UserActivity> UserActivities { get; set; }
-    }
+
+		public DbSet<User> Users { get; set; }
+
+		public DbSet<Inventory> Inventory { get; set; }
+
+		public DbSet<Item> Items { get; set; }
+
+		public DbSet<ItemType> ItemTypes { get; set; }
+
+		public DbSet<ItemxType> ItemxTypes { get; set; }
+
+        public DbSet<Pet> Pets { get; set; }
+
+        public DbSet<Species> Species { get; set; }
+	}
 }

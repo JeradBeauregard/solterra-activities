@@ -40,7 +40,7 @@ namespace SolterraActivities.Services
                 ActivityDurationInHours = ua.Activity?.DurationInHours,
                 PetName = ua.Pet?.PetName,
                 PetMoodAfterActivity = string.Join(", ", ua.Activity?.ActivityMoods.Select(am => am.Mood.MoodName) ?? []),
-                ItemGained = ua.Item?.ItemName
+                ItemGained = ua.Item?.Name
             }).ToList();
         }
 
@@ -72,7 +72,7 @@ namespace SolterraActivities.Services
                 ActivityDurationInHours = ua.Activity?.DurationInHours,
                 PetName = ua.Pet?.PetName,
                 PetMoodAfterActivity = string.Join(", ", ua.Activity?.ActivityMoods.Select(am => am.Mood.MoodName) ?? []),
-                ItemGained = ua.Item?.ItemName
+                ItemGained = ua.Item?.Name
             };
         }
 
@@ -102,7 +102,7 @@ namespace SolterraActivities.Services
             {
                 var ua = new UserActivity
                 {
-                    UserId = user.UserId,
+                    UserId = user.Id,
                     ActivityId = activity.ActivityId,
                     PetId = pet.PetId,
                     ItemId = item.ItemId,
@@ -165,10 +165,10 @@ namespace SolterraActivities.Services
 
             try
             {
-                ua.UserId = user.UserId;
+                ua.UserId = user.Id;
                 ua.ActivityId = activity.ActivityId;
                 ua.PetId = pet.PetId;
-                ua.ItemId = item.ItemId;
+                ua.ItemId = item.Id;
                 ua.User = user;
                 ua.Activity = activity;
                 ua.Pet = pet;
@@ -253,7 +253,7 @@ namespace SolterraActivities.Services
                 ActivityDurationInHours = ua.Activity?.DurationInHours,
                 PetName = ua.Pet?.PetName,
                 PetMoodAfterActivity = string.Join(", ", ua.Activity?.ActivityMoods.Select(am => am.Mood.MoodName) ?? []),
-                ItemGained = ua.Item?.ItemName
+                ItemGained = ua.Item?.Name
             }).ToList();
         }
 

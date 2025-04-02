@@ -58,16 +58,16 @@ namespace SolterraActivities.Controllers
         [Authorize]
         public async Task<IActionResult> New()
         {
-            var users = await _userService.ListUsers();
+            var users = await _userService.GetUsers();
             var activities = await _activityService.ListActivities();
             var pets = await _petService.ListPets();
-            var items = await _itemService.ListItems();
+            var items = await _itemService.GetItems();
 
             UserActivityNew options = new()
             {
                 AllUsers = users.Select(u => new SelectListItem
                 {
-                    Value = u.UserId.ToString(),
+                    Value = u.Id.ToString(),
                     Text = u.Username
                 }),
 
@@ -79,14 +79,14 @@ namespace SolterraActivities.Controllers
 
                 AllPets = pets.Select(p => new SelectListItem
                 {
-                    Value = p.PetId.ToString(),
-                    Text = p.PetName
+                    Value = p.Id.ToString(),
+                    Text = p.Name
                 }),
 
                 AllItems = items.Select(i => new SelectListItem
                 {
-                    Value = i.ItemId.ToString(),
-                    Text = i.ItemName
+                    Value = i.Id.ToString(),
+                    Text = i.Name
                 })
             };
 
@@ -115,10 +115,10 @@ namespace SolterraActivities.Controllers
         public async Task<IActionResult> Edit(int id)
         {
             var userActivity = await _userActivityService.FindUserActivity(id);
-            var users = await _userService.ListUsers();
+            var users = await _userService.GetUsers();
             var activities = await _activityService.ListActivities();
             var pets = await _petService.ListPets();
-            var items = await _itemService.ListItems();
+            var items = await _itemService.GetItems();
 
             if (userActivity == null)
             {
@@ -128,15 +128,30 @@ namespace SolterraActivities.Controllers
             UserActivityEdit options = new()
             {
                 UserActivity = userActivity,
-                AllUsers = users,
-                AllActivities = activities.Select(a => new SelectListItem
+				AllUsers = users.Select(u => new SelectListItem
+				{
+					Value = u.Id.ToString(),
+					Text = u.Username
+				}),
+
+				AllActivities = activities.Select(a => new SelectListItem
                 {
                     Value = a.ActivityId.ToString(),   
                     Text = a.ActivityName              
                 }),
-                AllPets = pets,
-                AllItems = items
-            };
+				AllPets = pets.Select(p => new SelectListItem
+				{
+					Value = p.Id.ToString(),
+					Text = p.Name
+				}),
+
+				AllItems = items.Select(i => new SelectListItem // convert items list to select list, with item id as value and item name as text... missing other details
+				{
+					Value = i.Id.ToString(),
+					Text = i.Name
+				})
+
+			};
 
             return View(options);
         }
