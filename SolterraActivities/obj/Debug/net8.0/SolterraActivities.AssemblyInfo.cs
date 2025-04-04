@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolterraActivities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b72fd35ce3d09d1353c628ff0e55f2cc4070712a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09c9cc95366260f70d5b6ddce6b3e42c0c6d9f18")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolterraActivities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolterraActivities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
