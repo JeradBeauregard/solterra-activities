@@ -432,38 +432,39 @@ namespace SolterraActivities.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("Agility")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Defence")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Health")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Hunger")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Intelligence")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Level")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Mood")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("agility")
+                    b.Property<int>("SpeciesId")
                         .HasColumnType("int");
 
-                    b.Property<int>("defence")
+                    b.Property<int>("Strength")
                         .HasColumnType("int");
 
-                    b.Property<int>("health")
-                        .HasColumnType("int");
-
-                    b.Property<int>("hunger")
-                        .HasColumnType("int");
-
-                    b.Property<int>("intelligence")
-                        .HasColumnType("int");
-
-                    b.Property<int>("level")
-                        .HasColumnType("int");
-
-                    b.Property<int>("moood")
-                        .HasColumnType("int");
-
-                    b.Property<int>("species_id")
-                        .HasColumnType("int");
-
-                    b.Property<int>("strength")
-                        .HasColumnType("int");
-
-                    b.Property<int>("userId")
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

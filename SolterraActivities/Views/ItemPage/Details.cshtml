@@ -1,0 +1,91 @@
+﻿
+@{
+    @model SolterraActivities.Models.ItemDetailsViewModel
+	var item = Model;
+	
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Item Details - Solterra CMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <a href="/ItemPage/List" class="btn btn-secondary mb-3">🔙 Back to Item List</a>
+
+        <div class="card shadow-sm p-4">
+            <div class="text-center">
+                <img src="@item.Item.PicPath" class="img-fluid rounded mb-3" alt="@item.Item.Name" style="max-width: 300px;">
+            </div>
+            <h1 class="text-center text-primary">@item.Item.Name</h1>
+
+            <p><strong>Item ID:</strong> @item.Item.Id</p>
+            <p><strong>Description:</strong> @item.Item.Description</p>
+            <p><strong>Value:</strong> @item.Item.Value</p>
+            <p><strong>Amount in existence:</strong> @item.TotalAmount</p>
+
+            <h3 class="mt-4">Types</h3>
+            <ul class="list-group">
+                @foreach (var itemType in item.ItemTypes)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="/ItemTypePage/Details/@itemType.Id" class="text-decoration-none">@itemType.Type</a>
+                        <form method="post" action="/ItemPage/UnlinkItemFromType">
+                            <input type="hidden" name="typeId" value="@itemType.Id" />
+                            <input type="hidden" name="itemId" value="@item.Item.Id" />
+                            <button type="submit" class="btn btn-danger btn-sm">❌ Unlink</button>
+                        </form>
+                    </li>
+                }
+            </ul>
+
+            <h4 class="mt-4">Link New Type</h4>
+            <form method="post" action="/ItemPage/LinkItemToType" class="d-flex gap-2">
+                <input type="hidden" name="itemId" value="@item.Item.Id" />
+                <select name="typeId" class="form-select">
+                    @foreach (var itemType in item.AllItemTypes)
+                    {
+                        <option value="@itemType.Id">@itemType.Type</option>
+                    }
+                </select>
+                <button type="submit" class="btn btn-primary">🔗 Link</button>
+            </form>
+
+            <h3 class="mt-4">Actions</h3>
+            <div class="d-flex gap-2">
+                <a href="/ItemPage/Edit/@item.Item.Id" class="btn btn-warning">✏️ Edit This Item</a>
+                <a href="/ItemPage/ConfirmDelete/@item.Item.Id" class="btn btn-danger">❌ Delete This Item</a>
+            </div>
+
+            <h3 class="mt-4">Users That Own This Item</h3>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Username</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in item.UserByItem)
+                        {
+                            <tr>
+                                <td><a href="/UserPage/Details/@user.UserId" class="text-decoration-none">@user.Username</a></td>
+                                <td>@user.Quantity</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

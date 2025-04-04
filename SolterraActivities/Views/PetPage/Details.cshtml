@@ -1,0 +1,27 @@
+﻿
+@{
+	//string name, int userId, int species_id, int level, 
+	// int health, int strength, int agility, 
+	// int intelligence, int defence, int hunger, string mood
+
+	@model SolterraActivities.Models.Pet  // eventually change to PetDetailsViewModel
+	var pet = Model;
+}
+
+<h1>Pet Details : @pet.Name</h1>
+
+<a href="/PetPage/List" class="btn btn-secondary mb-3">🔙 Back to Pet List</a>
+
+<p>Name: @pet.Name</p>
+<p>Species: @pet.SpeciesId</p> <!--Change to species name later-->
+<p>Level: @pet.Level</p>
+<p>Health: @pet.Health</p>
+<p>Strength: @pet.Strength</p>
+<p>Agility: @pet.Agility</p>
+<p>Intelligence: @pet.Intelligence</p>
+<p>Defence: @pet.Defence</p>
+<p>Hunger: @pet.Hunger</p>
+<p>Mood: @pet.Mood</p>
+
+<a href="/PetPage/Edit/@pet.Id">Edit @pet.Name</a>
+<a href="/PetPage/ConfirmDelete/@pet.Id">Delete @pet.Name</a>

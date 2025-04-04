@@ -1,0 +1,88 @@
+﻿@{
+
+    @model IEnumerable<InventoryDto>
+
+
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inventory Entries - Solterra CMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script>
+        function enableEdit(inputId, saveButtonId) {
+            document.getElementById(inputId).removeAttribute("readonly");
+            document.getElementById(saveButtonId).style.display = "inline-block";
+        }
+    </script>
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <!-- Actions Section -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="mb-0">Actions</h3>
+            <div>
+                <a href="/InventoryPage/New/" class="btn btn-success me-2">➕ Add New Inventory Entry</a>
+                <a href="/" class="btn btn-secondary">🏠 Back to Home</a>
+            </div>
+        </div>
+
+        <!-- Inventory Entries Section -->
+        <h3 class="mb-3">Inventory Entries</h3>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Inventory ID</th>
+                        <th>User ID</th>
+                        <th>Username</th>
+                        <th>Item ID</th>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var Inventory in Model)
+                    {
+                        <tr>
+                            <td>@Inventory.Id</td>
+                            <td>@Inventory.UserId</td>
+                            <td>@Inventory.Username</td>
+                            <td>@Inventory.ItemId</td>
+                            <td>@Inventory.ItemName</td>
+                            <td>
+                                <form method="post" action="/InventoryPage/UpdateQuantity">
+                                    <input type="hidden" name="id" value="@Inventory.Id">
+                                    <input type="number" name="quantity" id="quantity_@Inventory.Id"
+                                           value="@Inventory.Quantity" class="form-control d-inline-block w-50"
+                                           readonly />
+                                    <button type="button" class="btn btn-sm btn-link"
+                                            onclick="enableEdit('quantity_@Inventory.Id', 'saveBtn_@Inventory.Id')">
+                                        ✏️
+                                    </button>
+                                    <button type="submit" id="saveBtn_@Inventory.Id" class="btn btn-primary btn-sm"
+                                            style="display: none;">
+                                        💾 Save
+                                    </button>
+                                </form>
+                            </td>
+                            <td>
+                                <a href="/InventoryPage/ConfirmDelete/@Inventory.Id" class="btn btn-danger btn-sm">🗑️ Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
+
+

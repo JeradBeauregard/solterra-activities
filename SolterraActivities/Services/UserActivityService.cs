@@ -38,7 +38,7 @@ namespace SolterraActivities.Services
                 ActivityDate = ua.Activity?.ActivityDate,
                 ActivityCost = ua.Activity?.ActivityCost,
                 ActivityDurationInHours = ua.Activity?.DurationInHours,
-                PetName = ua.Pet?.PetName,
+                PetName = ua.Pet?.Name,
                 PetMoodAfterActivity = string.Join(", ", ua.Activity?.ActivityMoods.Select(am => am.Mood.MoodName) ?? []),
                 ItemGained = ua.Item?.Name
             }).ToList();
@@ -70,7 +70,7 @@ namespace SolterraActivities.Services
                 ActivityDate = ua.Activity?.ActivityDate,
                 ActivityCost = ua.Activity?.ActivityCost,
                 ActivityDurationInHours = ua.Activity?.DurationInHours,
-                PetName = ua.Pet?.PetName,
+                PetName = ua.Pet?.Name,
                 PetMoodAfterActivity = string.Join(", ", ua.Activity?.ActivityMoods.Select(am => am.Mood.MoodName) ?? []),
                 ItemGained = ua.Item?.Name
             };
@@ -104,8 +104,8 @@ namespace SolterraActivities.Services
                 {
                     UserId = user.Id,
                     ActivityId = activity.ActivityId,
-                    PetId = pet.PetId,
-                    ItemId = item.ItemId,
+                    PetId = pet.Id,
+                    ItemId = item.Id,
                     User = user,
                     Activity = activity,
                     Pet = pet,
@@ -167,7 +167,7 @@ namespace SolterraActivities.Services
             {
                 ua.UserId = user.Id;
                 ua.ActivityId = activity.ActivityId;
-                ua.PetId = pet.PetId;
+                ua.PetId = pet.Id;
                 ua.ItemId = item.Id;
                 ua.User = user;
                 ua.Activity = activity;
@@ -251,7 +251,7 @@ namespace SolterraActivities.Services
                 ActivityDate = ua.Activity?.ActivityDate,
                 ActivityCost = ua.Activity?.ActivityCost,
                 ActivityDurationInHours = ua.Activity?.DurationInHours,
-                PetName = ua.Pet?.PetName,
+                PetName = ua.Pet?.Name,
                 PetMoodAfterActivity = string.Join(", ", ua.Activity?.ActivityMoods.Select(am => am.Mood.MoodName) ?? []),
                 ItemGained = ua.Item?.Name
             }).ToList();

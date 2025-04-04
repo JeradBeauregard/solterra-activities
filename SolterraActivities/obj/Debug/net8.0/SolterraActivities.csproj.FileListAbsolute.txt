@@ -151,3 +151,5 @@ C:\Users\jerad\Desktop\solterra-activities\SolterraActivities\obj\Debug\net8.0\r
 C:\Users\jerad\Desktop\solterra-activities\SolterraActivities\obj\Debug\net8.0\SolterraActivities.pdb
 C:\Users\jerad\Desktop\solterra-activities\SolterraActivities\obj\Debug\net8.0\SolterraActivities.genruntimeconfig.cache
 C:\Users\jerad\Desktop\solterra-activities\SolterraActivities\obj\Debug\net8.0\ref\SolterraActivities.dll
+C:\Users\jerad\Desktop\solterra-activities\SolterraActivities\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\jerad\Desktop\solterra-activities\SolterraActivities\obj\Debug\net8.0\scopedcss\projectbundle\SolterraActivities.bundle.scp.css

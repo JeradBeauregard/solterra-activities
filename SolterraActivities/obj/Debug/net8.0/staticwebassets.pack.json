@@ -1,12 +1,20 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SolterraActivities.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SolterraActivities.1blq6dwhob.bundle.scp.css"
+    },
+    {
       "Id": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\wwwroot\\images\\items\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\1.jpg"
     },
     {
       "Id": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\wwwroot\\js\\site.js",

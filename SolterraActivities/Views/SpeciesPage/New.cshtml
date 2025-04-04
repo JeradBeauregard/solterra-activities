@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Create a new Species</h1>
+
+<a href="/SpeciesPage/List" class="btn btn-secondary">🏠 Back to Species List</a>
+<a href="/" class="btn btn-secondary">🏠 Back to Home</a>
+
+<form id="SpeciesNewForm" method="post" action="/SpeciesPage/Create">
+	<label for="SpeciesName">Species Name</label>
+	<input type="text" id="SpeciesName" name="SpeciesName" required>
+	<button type="submit" class="btn btn-primary">Create</button>
+</form>

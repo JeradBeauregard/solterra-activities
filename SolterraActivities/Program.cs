@@ -34,6 +34,8 @@ builder.Services.AddScoped<IInventoryService, InventoryService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IItemService, ItemService>();
 builder.Services.AddScoped<IItemTypesService, ItemTypesService>();
+builder.Services.AddScoped<IPetService, PetService>();
+builder.Services.AddScoped<ISpeciesService, SpeciesService>();
 
 
 
