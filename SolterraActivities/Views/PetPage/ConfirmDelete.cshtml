@@ -1,0 +1,19 @@
+﻿@model SolterraActivities.Models.Pet
+
+@{
+    var pet = Model;
+}
+
+<div class="container mt-5">
+    <h1 class="text-danger mb-3">Delete Pet: @pet.Name</h1>
+
+    <p class="lead">Are you sure you want to delete this pet?</p>
+    <p class="text-danger fw-bold">⚠️ This action cannot be undone.</p>
+
+    <form method="post" action="/PetPage/Delete/@pet.Id">
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <button type="submit" class="btn btn-danger">🗑️ Yes, Delete</button>
+            <a href="/PetPage/Details/@pet.Id" class="btn btn-secondary">❌ Cancel</a>
+        </div>
+    </form>
+</div>

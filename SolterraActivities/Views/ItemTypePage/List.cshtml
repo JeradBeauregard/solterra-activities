@@ -1,0 +1,44 @@
+﻿@{
+
+    @model IEnumerable<ItemType>
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Item Types - Solterra CMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container py-4">
+        <!-- Actions Section -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="mb-0">Actions</h3>
+            <div>
+                <a href="/" class="btn btn-secondary me-2">🏠 Back to Home</a>
+                <a href="/ItemTypePage/New" class="btn btn-success">➕ Create New Item Type</a>
+            </div>
+        </div>
+
+        <!-- Item Types Section -->
+        <h3>Item Types</h3>
+        <ul class="list-group">
+            @foreach (var type in Model)
+            {
+                <li class="list-group-item">
+                    <a href="/ItemTypePage/Details/@type.Id" class="text-decoration-none">
+                        🏷️ @type.Type
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+
+  
+</body>
+</html>
+

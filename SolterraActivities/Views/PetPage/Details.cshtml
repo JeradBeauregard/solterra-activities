@@ -1,0 +1,34 @@
+﻿@model SolterraActivities.Models.ViewModels.PetViewModels.PetDetails
+
+@{
+    var pet = Model;
+    // string name, int userId, int species_id, int level,
+    // int health, int strength, int agility,
+    // int intelligence, int defence, int hunger, string mood
+}
+
+<div class="container mt-4">
+    <a href="/PetPage/List" class="btn btn-secondary mb-3">🔙 Back to Pet List</a>
+
+    <h1 class="mb-4">Pet Details: <span class="text-primary">@pet.Name</span></h1>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <p><strong>Name:</strong> @pet.Name</p>
+            <p><strong>Species:</strong> <a href="/SpeciesPage/Details/@pet.SpeciesId">@pet.SpeciesName</a></p>
+            <p><strong>Level:</strong> @pet.Level</p>
+            <p><strong>Health:</strong> @pet.Health</p>
+            <p><strong>Strength:</strong> @pet.Strength</p>
+            <p><strong>Agility:</strong> @pet.Agility</p>
+            <p><strong>Intelligence:</strong> @pet.Intelligence</p>
+            <p><strong>Defence:</strong> @pet.Defence</p>
+            <p><strong>Hunger:</strong> @pet.Hunger</p>
+            <p><strong>Mood:</strong> @pet.Mood</p>
+        </div>
+    </div>
+
+    <div class="mt-4 d-flex gap-2">
+        <a href="/PetPage/Edit/@pet.Id" class="btn btn-warning">✏️ Edit @pet.Name</a>
+        <a href="/PetPage/ConfirmDelete/@pet.Id" class="btn btn-danger">🗑️ Delete @pet.Name</a>
+    </div>
+</div>

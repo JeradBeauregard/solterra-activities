@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Species>
+
+<div class="container mt-4">
+    <h1 class="mb-3">Species</h1>
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="mb-0">Actions</h3>
+        <div>
+            <a href="/SpeciesPage/New" class="btn btn-success me-2">➕ Create New Species</a>
+            <a href="/" class="btn btn-secondary">🏠 Back to Home</a>
+        </div>
+    </div>
+
+    <ul class="list-group">
+        @foreach (var species in Model)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>@species.Name</span>
+                <a href="/SpeciesPage/Details/@species.Id" class="btn btn-sm btn-primary">Details</a>
+            </li>
+        }
+    </ul>
+</div>

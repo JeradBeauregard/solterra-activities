@@ -21,6 +21,11 @@ namespace SolterraActivities.Services
 			return await _context.Species.ToListAsync();
 		}
 
+		public async Task<Species> ListSingleSpecies(int id)
+		{
+			return await _context.Species.FindAsync(id);
+		}
+
 		//create
 
 		public async Task<Species> CreateSpecies(string name)

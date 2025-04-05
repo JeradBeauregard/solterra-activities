@@ -1,0 +1,37 @@
+﻿
+@{
+    @model SolterraActivities.Models.InventoryDto
+	var inventory = Model;
+
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inventory Details - Solterra CMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <!-- Inventory Details -->
+        <div class="card shadow-sm p-4 mx-auto text-center" style="max-width: 500px;">
+            <h1 class="text-primary">Inventory Details</h1>
+            <p class="lead"><strong>ID:</strong> @inventory.Id</p>
+            <p class="lead"><strong>Item Name:</strong> @inventory.ItemName</p>
+
+            <!-- Actions -->
+            <div class="d-flex justify-content-between mt-4">
+                <a href="/InventoryPage/ConfirmDelete/@inventory.Id" class="btn btn-danger">
+                    ❌ Delete This Inventory Entry
+                </a>
+                <a href="/InventoryPage/List" class="btn btn-secondary">🔙 Back to Inventory List</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

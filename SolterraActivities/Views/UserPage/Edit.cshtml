@@ -1,0 +1,53 @@
+﻿
+@{
+
+	@model SolterraActivities.Models.User
+	var user = Model;
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit User - Solterra CMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <h1 class="mb-4 text-center">Edit User: <span class="text-primary">@user.Username</span></h1>
+
+        <div class="card shadow-sm p-4 mx-auto" style="max-width: 500px;">
+            <form id="edituser" method="post" action="/UserPage/EditUser">
+                <input type="hidden" id="id" name="id" value="@user.Id" />
+
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" value="@user.Username" required />
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" value="@user.Password" required />
+                </div>
+                <div class="mb-3">
+                    <label for="solshards" class="form-label">Sol-Shards:</label>
+                    <input type="number" id="solshards" name="solshards" class="form-control" value="@user.SolShards" required />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">💾 Save Changes</button>
+            </form>
+        </div>
+
+        <div class="text-center mt-3">
+            <a href="/UserPage/Details/@user.Id" class="btn btn-secondary">🔙 Back to Details</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+

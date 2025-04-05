@@ -22,6 +22,11 @@ namespace SolterraActivities.Services
 			return await _context.Pets.ToListAsync();
 		}
 
+		public async Task<Pet> ListPet(int id)
+		{
+			return await _context.Pets.FindAsync(id);
+		}
+
 		//create
 
 		public async Task<Pet> CreatePetAdmin(string name, int userId, int species_id, int level, int health, int strength, int agility, int intelligence, int defence, int hunger, string mood)

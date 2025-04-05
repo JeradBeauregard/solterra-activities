@@ -9,6 +9,7 @@ namespace SolterraActivities.Interfaces
 	{
 		// read
 		Task<IEnumerable<Pet>> ListPets();
+		Task<Pet> ListPet(int id);
 
 		//create
 

@@ -8,6 +8,7 @@ namespace SolterraActivities.Interfaces
 	{
 		// read
 		Task<IEnumerable<Species>> ListSpecies();
+		Task<Species> ListSingleSpecies(int id);
 		//create
 		Task<Species> CreateSpecies(string name);
 		//update

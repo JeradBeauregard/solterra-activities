@@ -72,6 +72,66 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/InventoryPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5UGFnZVxDb25maXJtRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/InventoryPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5UGFnZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/InventoryPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5UGFnZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/InventoryPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5UGFnZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/InventoryPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5UGFnZVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/ItemPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVBhZ2VcQ29uZmlybURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/ItemPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVBhZ2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/ItemPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVBhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/ItemPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVBhZ2VcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/ItemPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVBhZ2VcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/ItemTypePage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVR5cGVQYWdlXENvbmZpcm1EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/ItemTypePage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVR5cGVQYWdlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/ItemTypePage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVR5cGVQYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/ItemTypePage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVR5cGVQYWdlXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/ItemTypePage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVR5cGVQYWdlXE5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/MoodPage/ConfirmDelete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZFBhZ2VcQ29uZmlybURlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -92,6 +152,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZFBhZ2VcTmV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/PetPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0UGFnZVxDb25maXJtRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/PetPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0UGFnZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/PetPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0UGFnZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/PetPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0UGFnZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/PetPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0UGFnZVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -102,6 +182,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/SpeciesPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2llc1BhZ2VcQ29uZmlybURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/SpeciesPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2llc1BhZ2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/SpeciesPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2llc1BhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/SpeciesPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2llc1BhZ2VcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/SpeciesPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2llc1BhZ2VcTmV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/UserActivityPage/ConfirmDelete.cshtml]
@@ -122,6 +222,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/UserActivityPage/New.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjdGl2aXR5UGFnZVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/UserPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhZ2VcQ29uZmlybURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/UserPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhZ2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/UserPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/UserPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhZ2VcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/UserPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhZ2VcTmV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jerad/Desktop/solterra-activities/SolterraActivities/Views/_ViewImports.cshtml]
