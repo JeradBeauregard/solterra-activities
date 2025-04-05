@@ -3,7 +3,7 @@
 
 ---
 
-## Hobby API
+## Hobby API Gabi
 
 `/api/Hobby/`
 
@@ -17,7 +17,7 @@ DELETE  /api/Hobby/Delete/{id}      - Delete a hobby
 
 ---
 
-## Experience API
+## Experience API Gabi
 
 `/api/Experience/`
 
@@ -31,7 +31,7 @@ DELETE  /api/Experience/Delete/{id}      - Delete an experience
 
 ---
 
-## Mood API
+## Mood API Gabi
 
 `/api/Mood/`
 
@@ -45,7 +45,7 @@ DELETE  /api/Mood/Delete/{id}      - Delete a mood
 
 ---
 
-## ExperienceMood API (Bridge)
+## ExperienceMood API (Bridge) Gabi
 
 `/api/ExperienceMood/`
 
@@ -60,7 +60,7 @@ GET     /api/ExperienceMood/ListForExperience/{id}   - List moods for a specific
 
 ---
 
-## UserActivity API (Bridge)
+## UserActivity API (Bridge) Gabi
 
 `/api/UserActivity/`
 
@@ -77,7 +77,7 @@ POST    /api/UserActivity/UnlinkUser/{id}  - Delete a user activity association
 
 ---
 
-## Inventories
+## Inventories Jerad
 
 `/api/InventoriesAPI/`
 
@@ -91,7 +91,7 @@ DELETE  /api/InventoriesAPI/{id}                             - Delete an invento
 
 ---
 
-## Items
+## Items Jerad
 
 `/api/ItemsAPI/`
 
@@ -109,7 +109,7 @@ POST    /api/ItemsAPI/ItemsAPI/EditItem                    - Edit existing item
 
 ---
 
-## ItemTypes
+## ItemTypes Jerad
 
 `/api/ItemTypesAPI/`
 
@@ -123,7 +123,7 @@ DELETE  /api/ItemTypesAPI/ItemTypesAPI/DeleteItemType/{id}     - Delete item typ
 
 ---
 
-## Users
+## Users Jerad
 
 `/api/UsersAPI/`
 
@@ -138,7 +138,7 @@ POST    /api/UsersAPI/EditUser/{id}/{username}/{password}/{solshards} - Edit use
 
 ---
 
-## Pets
+## Pets Jerad
 
 `/api/PetApi/`
 
@@ -152,7 +152,7 @@ DELETE  /api/PetApi/DeletePet      - Delete a pet
 
 ---
 
-## Species
+## Species Jerad
 
 `/api/SpeciesApi/`
 
