@@ -1407,5 +1407,244 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolterraActivities.Controllers.PetApiController",
+    "Method": "CreatePetAdmin",
+    "RelativePath": "CreatePetAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "species_id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "level",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "health",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "strength",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "agility",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "intelligence",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "defence",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "hunger",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "mood",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SolterraActivities.Models.Pet",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SolterraActivities.Controllers.PetApiController",
+    "Method": "CreatePetUser",
+    "RelativePath": "CreatePetUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "species_id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SolterraActivities.Models.Pet",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SolterraActivities.Controllers.PetApiController",
+    "Method": "DeletePet",
+    "RelativePath": "DeletePet",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SolterraActivities.Controllers.PetApiController",
+    "Method": "ListPets",
+    "RelativePath": "List",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SolterraActivities.Models.Pet, SolterraActivities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SolterraActivities.Controllers.PetApiController",
+    "Method": "UpdatePetAdmin",
+    "RelativePath": "UpdatePetAdmin",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "species_id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "level",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "health",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "strength",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "agility",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "intelligence",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "defence",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "hunger",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "mood",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SolterraActivities.Models.Pet",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

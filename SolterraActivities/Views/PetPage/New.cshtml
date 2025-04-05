@@ -1,4 +1,5 @@
 ﻿@model SolterraActivities.Models.ViewModels.PetViewModels.PetNew
+
 @{
     var pet = Model;
 }
@@ -11,6 +12,17 @@
             <div class="col-md-6 mb-3">
                 <label for="petName" class="form-label">Name</label>
                 <input type="text" id="petName" name="name" class="form-control" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label for="userId" class="form-label">User ID</label>
+                <select id="userId" name="userId" class="form-select" required>
+                    <option value="">Select User</option>
+                    @foreach (var user in pet.Users)
+                    {
+                        <option value="@user.Id">@user.Username</option>
+                    }
+                </select>
             </div>
 
             <div class="col-md-6 mb-3">
@@ -34,12 +46,6 @@
                 <input type="number" id="petHealth" name="health" class="form-control" required>
             </div>
 
-            <div class="col-md-12 mb-4">
-                <label for="petHunger" class="form-label">Hunger: <span id="hungerValue">50</span></label>
-                <input type="range" id="petHunger" name="hunger" class="form-range" min="0" max="100" value="50" oninput="document.getElementById('hungerValue').innerText = this.value">
-            </div>
-
-
             <div class="col-md-4 mb-3">
                 <label for="petStrength" class="form-label">Strength</label>
                 <input type="number" id="petStrength" name="strength" class="form-control" required>
@@ -60,6 +66,12 @@
                 <input type="number" id="petDefence" name="defence" class="form-control" required>
             </div>
 
+            <div class="col-md-12 mb-4">
+                <label for="petHunger" class="form-label">Hunger: <span id="hungerValue">50</span></label>
+                <input type="range" id="petHunger" name="hunger" class="form-range" min="0" max="100" value="50"
+                       oninput="document.getElementById('hungerValue').innerText = this.value">
+            </div>
+
             <div class="col-md-8 mb-3">
                 <label for="petMood" class="form-label">Mood</label>
                 <select id="petMood" name="mood" class="form-select" required>
@@ -71,8 +83,6 @@
                 </select>
             </div>
         </div>
-
-        <input type="hidden" name="userId" value="@pet.UserId">
 
         <div class="mt-4">
             <button type="submit" class="btn btn-primary">Create Pet</button>

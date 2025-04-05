@@ -10,9 +10,7 @@ namespace SolterraActivities.Models.ViewModels
 			
 
 
-			public int UserId { get; set; }
-
-			public string UserName { get; set; }
+			public List<User> Users { get; set; }
 
 			public List<Species> Species { get; set; }
 

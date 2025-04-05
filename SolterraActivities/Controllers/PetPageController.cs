@@ -14,11 +14,13 @@ namespace SolterraActivities.Controllers
 		private readonly IPetService _petService;
 		private readonly ISpeciesService _speciesService;
 		private readonly IMoodService _moodService;
-		public PetPageController(IPetService petService, ISpeciesService speciesService, IMoodService moodService)
+		private readonly IUserService _userService;
+		public PetPageController(IPetService petService, ISpeciesService speciesService, IMoodService moodService, IUserService userService)
 		{
 			_petService = petService;
 			_speciesService = speciesService;
 			_moodService = moodService;
+			_userService = userService;
 		}
 		// GET: PetPage/List
 		public async Task<IActionResult> List()
@@ -64,6 +66,12 @@ namespace SolterraActivities.Controllers
 		public async Task<IActionResult> New()
 		{
 			PetViewModels.PetNew petNew = new PetViewModels.PetNew();
+
+			// get user from database
+			IEnumerable<User> users = await _userService.GetUsers();
+
+			petNew.Users = users.ToList();
+
 
 			// Get the list of species from the database
 			IEnumerable<Species> species = await _speciesService.ListSpecies();
