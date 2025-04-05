@@ -1,5 +1,85 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model SolterraActivities.Models.ViewModels.PetViewModels.PetEdit
+
 @{
+    var pet = Model;
 }
+
+<div class="container mt-4">
+    <a href="/PetPage/List" class="btn btn-secondary mb-3">🔙 Back to Pet List</a>
+
+    <h2 class="mb-4">Edit Pet: @pet.Name</h2>
+
+    <form id="editpetform" method="post" action="/PetPage/Update">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" value="@pet.Name" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="species_id" class="form-label">Species:</label>
+            <select id="species_id" name="species_id" class="form-select">
+                @foreach (var species in pet.Species)
+                {
+                    if (species.Id == pet.SpeciesId)
+                    {
+                        <option value="@species.Id" selected>@species.Name</option>
+                    }
+                    else
+                    {
+                        <option value="@species.Id">@species.Name</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="level" class="form-label">Level:</label>
+                <input type="number" id="level" name="level" class="form-control" value="@pet.Level" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="health" class="form-label">Health:</label>
+                <input type="number" id="health" name="health" class="form-control" value="@pet.Health" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="strength" class="form-label">Strength:</label>
+                <input type="number" id="strength" name="strength" class="form-control" value="@pet.Strength" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="agility" class="form-label">Agility:</label>
+                <input type="number" id="agility" name="agility" class="form-control" value="@pet.Agility" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="intelligence" class="form-label">Intelligence:</label>
+                <input type="number" id="intelligence" name="intelligence" class="form-control" value="@pet.Intelligence" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="defence" class="form-label">Defence:</label>
+                <input type="number" id="defence" name="defence" class="form-control" value="@pet.Defence" required>
+            </div>
+        </div>
+
+        <div class="col-md-12 mb-4">
+            <label for="petHunger" class="form-label">Hunger: <span id="hungerValue">50</span></label>
+            <input type="range" id="petHunger" name="hunger" class="form-range" min="0" max="100" value="50" oninput="document.getElementById('hungerValue').innerText = this.value">
+        </div>
+
+        <div class="mb-3">
+            <label for="petMood" class="form-label">Mood</label>
+            <select id="petMood" name="mood" class="form-select" required>
+                <option value="">Select Mood</option>
+                @foreach (var mood in pet.Moods)
+                {
+                    <option value="@mood.MoodName">@mood.MoodName</option>
+                }
+            </select>
+        </div>
+
+        <input type="hidden" id="id" name="id" value="@pet.Id">
+        <input type="hidden" id="userId" name="userId" value="@pet.UserId">
+
+        <div class="mt-4">
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </div>
+    </form>
+</div>

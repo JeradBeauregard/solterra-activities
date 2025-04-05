@@ -70,7 +70,7 @@ namespace SolterraActivities.Controllers
 			Species result = await _speciesService.ListSingleSpecies(id);
 			return View(result);
 		}
-		// POST: SpeciesPage/ConfirmDelete
+		// DELETE: SpeciesPage/Delete
 		[HttpPost]
 		public async Task<IActionResult> Delete(int id)
 		{

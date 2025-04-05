@@ -1,27 +1,34 @@
-﻿
-@{
-	//string name, int userId, int species_id, int level, 
-	// int health, int strength, int agility, 
-	// int intelligence, int defence, int hunger, string mood
+﻿@model SolterraActivities.Models.ViewModels.PetViewModels.PetDetails
 
-	@model SolterraActivities.Models.Pet  // eventually change to PetDetailsViewModel
-	var pet = Model;
+@{
+    var pet = Model;
+    // string name, int userId, int species_id, int level,
+    // int health, int strength, int agility,
+    // int intelligence, int defence, int hunger, string mood
 }
 
-<h1>Pet Details : @pet.Name</h1>
+<div class="container mt-4">
+    <a href="/PetPage/List" class="btn btn-secondary mb-3">🔙 Back to Pet List</a>
 
-<a href="/PetPage/List" class="btn btn-secondary mb-3">🔙 Back to Pet List</a>
+    <h1 class="mb-4">Pet Details: <span class="text-primary">@pet.Name</span></h1>
 
-<p>Name: @pet.Name</p>
-<p>Species: @pet.SpeciesId</p> <!--Change to species name later-->
-<p>Level: @pet.Level</p>
-<p>Health: @pet.Health</p>
-<p>Strength: @pet.Strength</p>
-<p>Agility: @pet.Agility</p>
-<p>Intelligence: @pet.Intelligence</p>
-<p>Defence: @pet.Defence</p>
-<p>Hunger: @pet.Hunger</p>
-<p>Mood: @pet.Mood</p>
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <p><strong>Name:</strong> @pet.Name</p>
+            <p><strong>Species:</strong> <a href="/SpeciesPage/Details/@pet.SpeciesId">@pet.SpeciesName</a></p>
+            <p><strong>Level:</strong> @pet.Level</p>
+            <p><strong>Health:</strong> @pet.Health</p>
+            <p><strong>Strength:</strong> @pet.Strength</p>
+            <p><strong>Agility:</strong> @pet.Agility</p>
+            <p><strong>Intelligence:</strong> @pet.Intelligence</p>
+            <p><strong>Defence:</strong> @pet.Defence</p>
+            <p><strong>Hunger:</strong> @pet.Hunger</p>
+            <p><strong>Mood:</strong> @pet.Mood</p>
+        </div>
+    </div>
 
-<a href="/PetPage/Edit/@pet.Id">Edit @pet.Name</a>
-<a href="/PetPage/ConfirmDelete/@pet.Id">Delete @pet.Name</a>
+    <div class="mt-4 d-flex gap-2">
+        <a href="/PetPage/Edit/@pet.Id" class="btn btn-warning">✏️ Edit @pet.Name</a>
+        <a href="/PetPage/ConfirmDelete/@pet.Id" class="btn btn-danger">🗑️ Delete @pet.Name</a>
+    </div>
+</div>

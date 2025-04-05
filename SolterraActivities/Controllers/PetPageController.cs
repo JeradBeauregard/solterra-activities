@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AspNetCoreGeneratedDocument;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using SolterraActivities.Interfaces;
 using SolterraActivities.Models;
@@ -30,9 +31,33 @@ namespace SolterraActivities.Controllers
 		// GET: PetPage/Details
 		public async Task<IActionResult> Details(int id)
 		{
-			Pet result = await _petService.ListPet(id);
+			Pet pet = await _petService.ListPet(id);
 
-			return View(result);
+			PetViewModels.PetDetails petDetails = new PetViewModels.PetDetails
+			{
+				Id = pet.Id,
+				Name = pet.Name,
+				UserId = pet.UserId,
+				SpeciesId = pet.SpeciesId,
+				Level = pet.Level,
+				Health = pet.Health,
+				Strength = pet.Strength,
+				Agility = pet.Agility,
+				Intelligence = pet.Intelligence,
+				Defence = pet.Defence,
+				Hunger = pet.Hunger,
+				Mood = pet.Mood
+			};
+
+			// Get the species name from the database
+			Species species = await _speciesService.ListSingleSpecies(pet.SpeciesId);
+			petDetails.SpeciesName = species.Name;
+
+
+
+
+
+			return View(petDetails);
 		}
 
 		// GET: PetPage/New
@@ -67,12 +92,57 @@ namespace SolterraActivities.Controllers
 		// GET: PetPage/Edit
 		public async Task<IActionResult> Edit(int id)
 		{
-			Pet result = await _petService.ListPet(id);
-			return View(result);
+			PetViewModels.PetEdit petUpdate = new PetViewModels.PetEdit();
+
+			// populate the PetEdit view model with the pet data
+			Pet pet = await _petService.ListPet(id);
+			petUpdate.Id = pet.Id;
+			petUpdate.Name = pet.Name;
+			petUpdate.UserId = pet.UserId;
+			petUpdate.SpeciesId = pet.SpeciesId;
+			petUpdate.Level = pet.Level;
+			petUpdate.Health = pet.Health;
+			petUpdate.Strength = pet.Strength;
+			petUpdate.Agility = pet.Agility;
+			petUpdate.Intelligence = pet.Intelligence;
+			petUpdate.Defence = pet.Defence;
+			petUpdate.Hunger = pet.Hunger;
+			petUpdate.Mood = pet.Mood;
+
+
+			// Get the list of species from the database
+			IEnumerable<Species> species = await _speciesService.ListSpecies();
+			// Populate the PetNew view model with the species
+			petUpdate.Species = species.ToList();
+
+			// Get the list of moods from the database
+			IEnumerable<MoodDto> moods = await _moodService.ListMoods();
+
+
+			// Populate the PetNew view model with the moods
+			petUpdate.Moods = moods.ToList();
+
+			return View(petUpdate);
 		}
 
-		// GET: PetPage/Delete
-		public async Task<IActionResult> ConfirmDelete(int id) {
+		// POST: PetPage/Update	
+		public async Task<IActionResult> Update(int id, string name, int userId, int species_id, int level, int health, int strength, int agility, int intelligence, int defence, int hunger, string mood)
+		{
+			Pet pet = await _petService.UpdatePetAdmin(id, name, userId, species_id, level, health, strength, agility, intelligence, defence, hunger, mood);
+			return RedirectToAction("List");
+		}
+
+		// GET: PetPage/ConfirmDelete
+		public async Task<IActionResult> ConfirmDelete(int id)
+		{
+			Pet pet = await _petService.ListPet(id);
+			
+			return View(pet);
+		}
+
+
+		// DELETE: PetPage/Delete
+		public async Task<IActionResult> Delete(int id) {
 
 			string result = await _petService.DeletePet(id);
 			return RedirectToAction("List");

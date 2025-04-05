@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\controllers\\speciespagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\speciespagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\views\\speciespage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\speciespage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\controllers\\petpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\petpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\views\\speciespage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\speciespage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\views\\petpage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\petpage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\views\\speciespage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\speciespage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\interfaces\\ispeciesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:interfaces\\ispeciesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\services\\speciesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:services\\speciesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\views\\speciespage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\speciespage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\controllers\\speciespagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\speciespagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\views\\speciespage\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\speciespage\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\models\\species.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\species.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\views\\petpage\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\petpage\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,60 +42,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SpeciesService.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Services\\SpeciesService.cs",
-              "RelativeDocumentMoniker": "Services\\SpeciesService.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Services\\SpeciesService.cs",
-              "RelativeToolTip": "Services\\SpeciesService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T22:14:51.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ISpeciesService.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Interfaces\\ISpeciesService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ISpeciesService.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Interfaces\\ISpeciesService.cs",
-              "RelativeToolTip": "Interfaces\\ISpeciesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T22:12:22.49Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PetPageController.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\PetPageController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PetPageController.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\PetPageController.cs",
-              "RelativeToolTip": "Controllers\\PetPageController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T22:08:06.764Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SpeciesPageController.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\SpeciesPageController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SpeciesPageController.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\SpeciesPageController.cs",
-              "RelativeToolTip": "Controllers\\SpeciesPageController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAACsAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T22:07:12.667Z",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\SpeciesPage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\SpeciesPage\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\SpeciesPage\\Edit.cshtml",
+              "RelativeToolTip": "Views\\SpeciesPage\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T00:50:41.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ConfirmDelete.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\PetPage\\ConfirmDelete.cshtml",
+              "RelativeDocumentMoniker": "Views\\PetPage\\ConfirmDelete.cshtml",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\PetPage\\ConfirmDelete.cshtml",
+              "RelativeToolTip": "Views\\PetPage\\ConfirmDelete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T00:46:44.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConfirmDelete.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\SpeciesPage\\ConfirmDelete.cshtml",
+              "RelativeDocumentMoniker": "Views\\SpeciesPage\\ConfirmDelete.cshtml",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\SpeciesPage\\ConfirmDelete.cshtml",
+              "RelativeToolTip": "Views\\SpeciesPage\\ConfirmDelete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T00:46:39.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Species.cs",
               "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Models\\Species.cs",
               "RelativeDocumentMoniker": "Models\\Species.cs",
@@ -103,43 +93,60 @@
               "RelativeToolTip": "Models\\Species.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T22:06:15.419Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "New.cshtml",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\SpeciesPage\\New.cshtml",
-              "RelativeDocumentMoniker": "Views\\SpeciesPage\\New.cshtml",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\SpeciesPage\\New.cshtml",
-              "RelativeToolTip": "Views\\SpeciesPage\\New.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T22:04:28.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "List.cshtml",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\PetPage\\List.cshtml",
-              "RelativeDocumentMoniker": "Views\\PetPage\\List.cshtml",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\PetPage\\List.cshtml",
-              "RelativeToolTip": "Views\\PetPage\\List.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T22:00:25.294Z"
+              "WhenOpened": "2025-04-05T00:44:56.038Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\SpeciesPage\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\SpeciesPage\\Details.cshtml",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\SpeciesPage\\Details.cshtml",
+              "RelativeToolTip": "Views\\SpeciesPage\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T00:43:01.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "List.cshtml",
               "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\SpeciesPage\\List.cshtml",
               "RelativeDocumentMoniker": "Views\\SpeciesPage\\List.cshtml",
               "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\SpeciesPage\\List.cshtml",
               "RelativeToolTip": "Views\\SpeciesPage\\List.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T22:00:22.812Z"
+              "WhenOpened": "2025-04-05T00:40:08.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ISpeciesService.cs",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Interfaces\\ISpeciesService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ISpeciesService.cs",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Interfaces\\ISpeciesService.cs",
+              "RelativeToolTip": "Interfaces\\ISpeciesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T00:39:49.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SpeciesPageController.cs",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\SpeciesPageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SpeciesPageController.cs",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\SpeciesPageController.cs",
+              "RelativeToolTip": "Controllers\\SpeciesPageController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAwwEgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T00:39:46.705Z",
+              "EditorCaption": ""
             }
           ]
         }
