@@ -23,6 +23,7 @@ namespace SolterraActivities.Interfaces
 		// edit user
 
 		Task<CreateUserDto> EditUser(int id, string username, string password, int solshards);
+		Task<string> UpdateActivePet(int id, int petId);
 
 		// delete user
 

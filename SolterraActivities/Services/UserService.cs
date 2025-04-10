@@ -133,6 +133,21 @@ namespace SolterraActivities.Services
 			return "user deleted";
 		}
 
+		// update active pet
+
+		public async Task<string> UpdateActivePet(int id, int petId)
+		{
+			User user = await _context.Users.FindAsync(id);
+			if (user == null)
+			{
+				return "user not found";
+			}
+			user.ActivePetId = petId;
+			_context.Users.Update(user);
+			await _context.SaveChangesAsync();
+			return "active pet updated";
+		}
+
 
 	}
 }

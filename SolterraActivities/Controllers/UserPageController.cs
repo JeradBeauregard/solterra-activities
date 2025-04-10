@@ -11,12 +11,14 @@ namespace SolterraActivities.Controllers
 		private readonly IUserService _userService;
 		private readonly IInventoryService _inventoryService;
 		private readonly IItemService _itemService;
+		private readonly IPetService _petService;
 
-		public UserPageController(IUserService userService, IInventoryService inventoryService, IItemService itemService)
+		public UserPageController(IUserService userService, IInventoryService inventoryService, IItemService itemService, IPetService petService)
 		{
 			_userService = userService; // Dependancy Injection: User Service
 			_inventoryService = inventoryService;
 			_itemService = itemService;
+			_petService = petService;
 		}
 
 		// List
@@ -49,6 +51,15 @@ namespace SolterraActivities.Controllers
 			return RedirectToAction("Details", new { id = userId });
 		}
 
+
+		// Update active Pet
+
+		public async Task<IActionResult> UpdateActivePet(int UserId, int petId)
+		{
+			string result = await _userService.UpdateActivePet(UserId, petId);
+			return RedirectToAction("Details", new { id = UserId });
+		}
+
 		// Details
 
 		public async  Task<IActionResult> Details(int id)
@@ -56,6 +67,7 @@ namespace SolterraActivities.Controllers
 			User user = await _userService.GetUser(id);
 			IEnumerable<InventoryDto> inventory = await _inventoryService.ListUserInventory(id);
 			IEnumerable<Item> items = await  _itemService.GetItems();
+			IEnumerable<PetDto> pets = await _petService.ListUserPets(id);
 
 			// Order items alphabetically by name
 			items = items.OrderBy(i => i.Name);
@@ -64,7 +76,8 @@ namespace SolterraActivities.Controllers
 			{
 				User = user,
 				Inventory = inventory,
-				AllItems = items
+				AllItems = items,
+				Pets = pets
 			};
 
 			return View(userDetails);

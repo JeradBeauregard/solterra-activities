@@ -14,6 +14,8 @@ namespace SolterraActivities.Models
 		public int InventorySpace { get; set; }
 
 		public int SolShards { get; set; }
+
+		public int ActivePetId { get; set; }
 	}
 
 	public class CreateUserDto
@@ -33,6 +35,8 @@ namespace SolterraActivities.Models
 		public IEnumerable<InventoryDto> Inventory { get; set; }
 
 		public IEnumerable<Item> AllItems { get; set; }
+
+		public IEnumerable<PetDto> Pets { get; set; }
 	}
 }
 

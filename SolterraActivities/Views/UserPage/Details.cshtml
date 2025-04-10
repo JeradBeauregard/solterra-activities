@@ -1,119 +1,155 @@
-﻿
+﻿@model SolterraActivities.Models.UserDetailsViewModel
 @{
-    @model SolterraActivities.Models.UserDetailsViewModel
 	var userDetails = Model;
-
-
-	
-
-	
 }
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>User Details - Solterra CMS</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script>
-        function enableEdit(inputId, saveButtonId) {
-            document.getElementById(inputId).removeAttribute("readonly");
-            document.getElementById(saveButtonId).style.display = "inline-block";
-        }
-    </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User Details - Solterra CMS</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<script>
+		function enableEdit(inputId, saveButtonId) {
+			document.getElementById(inputId).removeAttribute("readonly");
+			document.getElementById(saveButtonId).style.display = "inline-block";
+		}
+	</script>
 </head>
 <body class="bg-light">
 
-    <div class="container py-5">
-        <h1 class="mb-4 text-center">User Details: <span class="text-primary">@userDetails.User.Username</span></h1>
+	<div class="container py-5">
+		<h1 class="mb-4 text-center">User Details: <span class="text-primary">@userDetails.User.Username</span></h1>
 
-        <div class="card shadow-sm p-4 mx-auto" style="max-width: 600px;">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><strong>Username:</strong> @userDetails.User.Username</li>
-                <li class="list-group-item"><strong>Password:</strong> @userDetails.User.Password</li>
-                <li class="list-group-item"><strong>Sol-Shards:</strong> @userDetails.User.SolShards</li>
-                <li class="list-group-item"><strong>Inventory Space:</strong> @userDetails.User.InventorySpace</li>
-            </ul>
-        </div>
+		<div class="card shadow-sm p-4 mx-auto mb-4" style="max-width: 600px;">
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><strong>Username:</strong> @userDetails.User.Username</li>
+				<li class="list-group-item"><strong>Password:</strong> @userDetails.User.Password</li>
+				<li class="list-group-item"><strong>Sol-Shards:</strong> @userDetails.User.SolShards</li>
+				<li class="list-group-item"><strong>Inventory Space:</strong> @userDetails.User.InventorySpace</li>
+			</ul>
+		</div>
 
-        <!-- Actions -->
-        <h3 class="mt-4">Actions</h3>
-        <div class="d-flex gap-2">
-            <a href="/UserPage/Edit/@userDetails.User.Id" class="btn btn-warning">✏️ Edit This User</a>
-            <a href="/UserPage/ConfirmDelete/@userDetails.User.Id" class="btn btn-danger">❌ Delete This User</a>
-        </div>
+		<!-- Actions -->
+		<h3 class="mt-4">Actions</h3>
+		<div class="d-flex gap-2 mb-4">
+			<a href="/UserPage/Edit/@userDetails.User.Id" class="btn btn-warning">✏️ Edit This User</a>
+			<a href="/UserPage/ConfirmDelete/@userDetails.User.Id" class="btn btn-danger">❌ Delete This User</a>
+		</div>
 
-        <!-- Add Item to Inventory -->
-        <h4 class="mt-4">Add Item to User Inventory</h4>
-        <form method="post" action="/UserPage/AddToInventory" class="row g-2">
-            <input type="hidden" value="@userDetails.User.Id" name="userId" />
-            <div class="col-md-6">
-                <label for="itemId" class="form-label">Item:</label>
-                <select name="itemId" class="form-select">
-                    @foreach (var item in userDetails.AllItems)
-                    {
-                        <option value="@item.Id">@item.Name</option>
-                    }
-                </select>
-            </div>
-            <div class="col-md-4">
-                <label for="quantity" class="form-label">Quantity:</label>
-                <input type="number" name="quantity" class="form-control" required />
-            </div>
-            <div class="col-md-2 d-flex align-items-end">
-                <button type="submit" class="btn btn-primary w-100">➕ Add</button>
-            </div>
-        </form>
+		<!-- Add Item to Inventory -->
+		<h4 class="mt-4">Add Item to User Inventory</h4>
+		<form method="post" action="/UserPage/AddToInventory" class="row g-2 mb-4">
+			<input type="hidden" value="@userDetails.User.Id" name="userId" />
+			<div class="col-md-6">
+				<label for="itemId" class="form-label">Item:</label>
+				<select name="itemId" class="form-select">
+					@foreach (var item in userDetails.AllItems)
+					{
+						<option value="@item.Id">@item.Name</option>
+					}
+				</select>
+			</div>
+			<div class="col-md-4">
+				<label for="quantity" class="form-label">Quantity:</label>
+				<input type="number" name="quantity" class="form-control" required />
+			</div>
+			<div class="col-md-2 d-flex align-items-end">
+				<button type="submit" class="btn btn-primary w-100">➕ Add</button>
+			</div>
+		</form>
 
-        <!-- Inventory Table with Editable Quantity -->
-        <h3 class="mt-4">Inventory of <span class="text-primary">@userDetails.User.Username</span></h3>
-        <div class="table-responsive">
-            <table class="table table-striped table-hover">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Item Name</th>
-                        <th>Item Quantity</th>
-                        <th>Item Details</th>
-                        <th>Delete Entry</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var inventory in userDetails.Inventory)
-                    {
-                        <tr>
-                            <td>@inventory.ItemName</td>
-                            <td>
-                                <form method="post" action="/UserPage/UpdateQuantity">
-                                    <input type="hidden" name="id" value="@inventory.Id">
-                                    <input type="number" name="quantity" id="quantity_@inventory.Id"
-                                           value="@inventory.Quantity" class="form-control d-inline-block w-50"
-                                           readonly />
-                                    <button type="button" class="btn btn-sm btn-link"
-                                            onclick="enableEdit('quantity_@inventory.Id', 'saveBtn_@inventory.Id')">
-                                        ✏️
-                                    </button>
-                                    <button type="submit" id="saveBtn_@inventory.Id" class="btn btn-primary btn-sm"
-                                            style="display: none;">
-                                        💾 Save
-                                    </button>
-                                </form>
-                            </td>
-                            <td><a href="/ItemPage/Details/@inventory.ItemId" class="btn btn-info btn-sm text-white">🔍 Details</a></td>
-                            <td>
-                                <form method="post" action="/InventoryPage/DeleteInventoryFromUserDetails">
-                                    <input type="hidden" value="@inventory.Id" name="Id" />
-                                    <input type="hidden" value="@userDetails.User.Id" name="UserId" />
-                                    <button type="submit" class="btn btn-danger btn-sm">🗑️ Delete</button>
-                                </form>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
-    </div>
+		<!-- Inventory Table -->
+		<h3 class="mt-4">Inventory of <span class="text-primary">@userDetails.User.Username</span></h3>
+		<div class="table-responsive mb-5">
+			<table class="table table-striped table-hover">
+				<thead class="table-dark">
+					<tr>
+						<th>Item Name</th>
+						<th>Item Quantity</th>
+						<th>Item Details</th>
+						<th>Delete Entry</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var inventory in userDetails.Inventory)
+					{
+						<tr>
+							<td>@inventory.ItemName</td>
+							<td>
+								<form method="post" action="/UserPage/UpdateQuantity" class="d-flex align-items-center gap-2">
+									<input type="hidden" name="id" value="@inventory.Id" />
+									<input type="number" name="quantity" id="quantity_@inventory.Id"
+										   value="@inventory.Quantity" class="form-control" readonly />
+									<button type="button" class="btn btn-sm btn-link"
+											onclick="enableEdit('quantity_@inventory.Id', 'saveBtn_@inventory.Id')">
+										✏️
+									</button>
+									<button type="submit" id="saveBtn_@inventory.Id" class="btn btn-primary btn-sm"
+											style="display: none;">
+										💾 Save
+									</button>
+								</form>
+							</td>
+							<td>
+								<a href="/ItemPage/Details/@inventory.ItemId" class="btn btn-info btn-sm text-white">🔍 Details</a>
+							</td>
+							<td>
+								<form method="post" action="/InventoryPage/DeleteInventoryFromUserDetails">
+									<input type="hidden" value="@inventory.Id" name="Id" />
+									<input type="hidden" value="@userDetails.User.Id" name="UserId" />
+									<button type="submit" class="btn btn-danger btn-sm">🗑️ Delete</button>
+								</form>
+							</td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Pet Table -->
+		<h3 class="mt-4">Pets</h3>
+		<div class="table-responsive">
+			<table class="table table-bordered table-hover">
+				<thead class="table-light">
+					<tr>
+						<th>Pet Name</th>
+						<th>Species</th>
+						<th>Pet Details</th>
+						<th>Select As Active</th>
+						<th>Active Pet</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var pet in userDetails.Pets)
+					{
+						<tr>
+							<td>@pet.Name</td>
+							<td>@pet.SpeciesName</td>
+							<td><a href="/PetPage/Details/@pet.Id" class="btn btn-outline-primary btn-sm">🔍 View</a></td>
+							<td>
+								<form method="post" action="/UserPage/UpdateActivePet">
+									<input type="hidden" name="userId" value="@userDetails.User.Id" />
+									<input type="hidden" name="petId" value="@pet.Id" />
+									<button type="submit" class="btn btn-success btn-sm">🐾 Set Active</button>
+								</form>
+							</td>
+							<td>
+								@if (userDetails.User.ActivePetId == pet.Id)
+								{
+									<span class="badge bg-success">Active</span>
+								}
+								else
+								{
+									<span class="badge bg-secondary">Inactive</span>
+								}
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+
+	</div>
 </body>
 </html>
-
-

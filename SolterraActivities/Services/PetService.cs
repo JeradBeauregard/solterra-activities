@@ -27,6 +27,32 @@ namespace SolterraActivities.Services
 			return await _context.Pets.FindAsync(id);
 		}
 
+		public async Task<IEnumerable<PetDto>> ListUserPets(int userId)
+		{
+			IEnumerable<Pet> pets = await _context.Pets.Where(p => p.UserId == userId).ToListAsync();
+			IEnumerable<Species> SpeciesList = await _context.Species.ToListAsync();
+			IEnumerable<User> UserList = await _context.Users.ToListAsync();
+			IEnumerable<PetDto> petDtos = pets.Select(p => new PetDto
+			{
+				Id = p.Id,
+				Name = p.Name,
+				UserId = p.UserId,
+				UserName = UserList.FirstOrDefault(u => u.Id == p.UserId)?.Username,
+				SpeciesId = p.SpeciesId,
+				SpeciesName = SpeciesList.FirstOrDefault(s => s.Id == p.SpeciesId)?.Name,
+				Level = p.Level,
+				Health = p.Health,
+				Strength = p.Strength,
+				Agility = p.Agility,
+				Intelligence = p.Intelligence,
+				Defence = p.Defence,
+				Hunger = p.Hunger,
+				Mood = p.Mood
+			});
+
+			return petDtos;
+		}
+
 		//create
 
 		public async Task<Pet> CreatePetAdmin(string name, int userId, int species_id, int level, int health, int strength, int agility, int intelligence, int defence, int hunger, string mood)
