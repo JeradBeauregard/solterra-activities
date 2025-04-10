@@ -194,6 +194,16 @@ namespace SolterraActivities.Controllers
 			return Result;
 		}
 
+		//PUT: api/UsersAPI/updateActivePet
 
-    }
+		[HttpPut("updateActivePet/{userId}/{petId}")]
+
+		public async Task<ActionResult<string>> UpdateActivePet(int userId, int petId)
+		{
+			string result = await _userService.UpdateActivePet(userId, petId);
+			return result;
+		}
+
+
+	}
 }

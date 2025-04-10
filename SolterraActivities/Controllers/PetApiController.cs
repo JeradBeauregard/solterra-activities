@@ -34,6 +34,21 @@ namespace SolterraActivities.Controllers
 			return await _petService.ListPet(id);
 		}
 
+		/// <summary>
+		/// Retuns a list of all pets for a user
+		/// </summary>
+		/// <param name="userId">The id of a user</param>
+		/// <example>
+		/// GET: Api/PetApi/ListUserPets -> [{Pet},{Pet},..]
+		/// </example>
+		/// <returns>A list of pet objects</returns>
+		/// 
+		[HttpGet("ListUserPets")]
+		public async Task<IEnumerable<PetDto>> ListUserPets(int userId)
+		{
+			return await _petService.ListUserPets(userId);
+		}
+
 		//create
 
 		/// <summary>
