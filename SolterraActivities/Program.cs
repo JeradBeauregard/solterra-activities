@@ -36,6 +36,8 @@ builder.Services.AddScoped<IItemService, ItemService>();
 builder.Services.AddScoped<IItemTypesService, ItemTypesService>();
 builder.Services.AddScoped<IPetService, PetService>();
 builder.Services.AddScoped<ISpeciesService, SpeciesService>();
+builder.Services.AddScoped<IItemEffectService, ItemEffectService>();
+
 
 
 

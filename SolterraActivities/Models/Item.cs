@@ -36,6 +36,8 @@ namespace SolterraActivities.Models
 		public string Description { get; set; }
 		public int Value { get; set; }
 
+		public bool IsConsumable { get; set; }
+
 		public string? PicPath { get; set; }
 		public virtual List<ItemxType> ItemxType { get; set; }
 	}
@@ -86,6 +88,11 @@ namespace SolterraActivities.Models
 		public IEnumerable<ItemType> AllItemTypes { get; set; }
 
 		public IEnumerable<UserByItemDto> UserByItem { get; set; }
+
+		public IEnumerable<ItemEffect> Effects { get; set; }
+
+		public HashSet<string> ValidStats { get; set; } = new HashSet<string>();
+
 
 		public int TotalAmount { get; set; }
 	}

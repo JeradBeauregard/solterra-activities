@@ -571,6 +571,95 @@
     ]
   },
   {
+    "ContainingType": "SolterraActivities.Controllers.ItemEffectApiController",
+    "Method": "AddItemEffect",
+    "RelativePath": "api/ItemEffectApi/AddItemEffect/{itemId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "statToAffect",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "amount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolterraActivities.Controllers.ItemEffectApiController",
+    "Method": "DeleteItemEffect",
+    "RelativePath": "api/ItemEffectApi/DeleteItemEffect/{itemEffectId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemEffectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolterraActivities.Controllers.ItemEffectApiController",
+    "Method": "GetItemEffects",
+    "RelativePath": "api/ItemEffectApi/GetItemEffects/{itemId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolterraActivities.Controllers.ItemEffectApiController",
+    "Method": "UpdateItemEffect",
+    "RelativePath": "api/ItemEffectApi/UpdateItemEffect/{itemEffectId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemEffectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "statToAffect",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "amount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SolterraActivities.Controllers.ItemsAPIController",
     "Method": "GetItems",
     "RelativePath": "api/ItemsAPI",
@@ -760,6 +849,32 @@
       },
       {
         "Name": "typeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SolterraActivities.Controllers.ItemsAPIController",
+    "Method": "SwitchIsConsumable",
+    "RelativePath": "api/ItemsAPI/ItemsAPI/SwitchIsConsumable/{itemId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
         "Type": "System.Int32",
         "IsRequired": true
       }
