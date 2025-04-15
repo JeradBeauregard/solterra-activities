@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\data\\migrations\\20250415172147_itemeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:data\\migrations\\20250415172147_itemeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\models\\itemeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\itemeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250415172147_itemEffect.cs",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Data\\Migrations\\20250415172147_itemEffect.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250415172147_itemEffect.cs",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Data\\Migrations\\20250415172147_itemEffect.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250415172147_itemEffect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T17:21:48.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA6wCsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T17:20:00.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemEffect.cs",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Models\\ItemEffect.cs",
+              "RelativeDocumentMoniker": "Models\\ItemEffect.cs",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Models\\ItemEffect.cs",
+              "RelativeToolTip": "Models\\ItemEffect.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T17:12:50.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "Models\\Item.cs",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Models\\Item.cs",
+              "RelativeToolTip": "Models\\Item.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wBgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T16:28:59.26Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
