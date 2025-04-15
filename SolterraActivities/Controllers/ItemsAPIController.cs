@@ -309,6 +309,13 @@ namespace SolterraActivities.Controllers
 			return result;
 		}
 
+		[HttpPost("ItemsAPI/SwitchIsConsumable/{itemId}")]
+
+		public async Task<string> SwitchIsConsumable(int itemId)
+		{
+			string result = await _itemService.SwitchIsConsumable(itemId);
+			return result;
+		}
 
 	}
 }

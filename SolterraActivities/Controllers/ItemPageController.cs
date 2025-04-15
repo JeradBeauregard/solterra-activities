@@ -11,11 +11,14 @@ namespace SolterraActivities.Controllers
 		private readonly IItemService _itemService;
 		private readonly IItemTypesService _itemTypesService;
 		private readonly IInventoryService _inventoryService;
-		public ItemPageController(IItemService itemService, IItemTypesService itemTypesService, IInventoryService inventoryService)
+		private readonly IItemEffectService _itemEffectService;
+		public ItemPageController(IItemService itemService, IItemTypesService itemTypesService, IInventoryService inventoryService, 
+			IItemEffectService itemEffectService)
 		{
 			_itemService = itemService; // Dependancy Injection: Item Service
 			_itemTypesService = itemTypesService;
 			_inventoryService = inventoryService;
+			_itemEffectService = itemEffectService;
 		}
 
 
@@ -43,19 +46,24 @@ namespace SolterraActivities.Controllers
 			return RedirectToAction("List");
 
 		}
-			
+
 
 		// Details
 
 		public async Task<IActionResult> Details(int Id)
 		{
 			ItemDto item = await _itemService.GetItem(Id);
-			
+
 			IEnumerable<ItemTypeDto> itemTypes = await _itemTypesService.GetTypesForItem(Id);
 
 			IEnumerable<ItemType> allTypes = await _itemTypesService.GetItemTypes();
 
 			IEnumerable<UserByItemDto> users = await _itemService.ListUsersByItem(Id);
+
+			IEnumerable<ItemEffect> effects = await _itemEffectService.GetItemEffects(Id);
+
+			HashSet<string> validStats = new HashSet<string>(PetStats.ValidStats);
+
 
 			int TotalItems = await _inventoryService.TotalAmountofItem(Id);
 
@@ -65,13 +73,43 @@ namespace SolterraActivities.Controllers
 				ItemTypes = itemTypes,
 				AllItemTypes = allTypes,
 				UserByItem = users,
+				Effects = effects,
+				ValidStats = validStats,
 				TotalAmount = TotalItems
 			};
 
 			return View(itemDetails);
-
-			
 		}
+
+		// switch isConsumable to true or false
+
+		public async Task<IActionResult> SwitchIsConsumable(int itemId)
+		{
+			await _itemService.SwitchIsConsumable(itemId);
+			return RedirectToAction("Details", new { id = itemId });
+		}
+
+		// item effects
+
+		public async Task<IActionResult> AddItemEffect(int itemId, string statToAffect, int amount)
+		{
+			await _itemEffectService.AddItemEffect(itemId,statToAffect,amount);
+			return RedirectToAction("Details", new { id = itemId });
+		}
+		public async Task<IActionResult> UpdateItemEffect(int id, int itemId, string statToAffect, int amount)
+		{
+			await _itemEffectService.UpdateItemEffect(id, itemId, statToAffect, amount);
+			return RedirectToAction("Details", new { id = itemId });
+		}
+		public async Task<IActionResult> DeleteItemEffect(int effectId ,int itemId)
+		{
+			await _itemEffectService.DeleteItemEffect(effectId);
+			return RedirectToAction("Details", new { id = itemId });
+		}
+		//<a href="/ItemPage/DeleteItemEffect?effectId=@effect.Id&itemId=@item.Id">Delete</a>
+
+
+
 
 		// link and unlink
 

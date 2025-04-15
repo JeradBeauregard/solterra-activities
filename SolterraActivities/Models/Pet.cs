@@ -33,6 +33,20 @@ namespace SolterraActivities.Models
 		public string Mood { get; set; }
 	}
 
+	// valid pet stats
+
+	public static class PetStats
+	{
+		public static readonly HashSet<string> ValidStats = new HashSet<string>
+	{
+		"Health", "Strength", "Agility", "Intelligence", "Defence", "Hunger"
+        // Mood could be handled differently since it's a string
+    };
+	}
+
+
+
+
 	// pet dto for user page
 
 	public class PetDto

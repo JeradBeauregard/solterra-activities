@@ -63,12 +63,13 @@ namespace SolterraActivities.Services
 			itemDto.Name = item.Name;
 			itemDto.Description = item.Description;
 			itemDto.Value = item.Value;
+			itemDto.IsConsumable = item.IsConsumable;
 
-			if(item.HasPic)
+			if (item.HasPic)
 			{
 				itemDto.PicPath = $"/images/items/{item.Id}{item.PicPath}";
 			}
-			
+
 
 			return itemDto;
 		}
@@ -251,7 +252,7 @@ namespace SolterraActivities.Services
 		{
 			Item item = await _context.Items.FindAsync(id);
 
-			
+
 			item.Name = name;
 			item.Description = description;
 			item.Value = value;
@@ -287,7 +288,7 @@ namespace SolterraActivities.Services
 			{
 				string OldFileName = $"{item.Id}{item.PicPath}";
 				string OldFilePath = "wwwroot/images/items/" + OldFileName;
-				if(File.Exists(OldFilePath))
+				if (File.Exists(OldFilePath))
 				{
 					File.Delete(OldFilePath);
 				}
@@ -324,6 +325,31 @@ namespace SolterraActivities.Services
 			else
 			{
 				return "image not uploaded";
+			}
+
+
+
+		}
+
+		public async Task<string> SwitchIsConsumable(int ItemId)
+		{
+
+			Item item = await _context.Items.FindAsync(ItemId);
+			if (item == null)
+			{
+				return "item not found";
+			}
+			item.IsConsumable = !item.IsConsumable;
+			_context.Items.Update(item);
+			await _context.SaveChangesAsync();
+
+			if (item.IsConsumable)
+			{
+				return "item consumable status changed to true";
+			}
+			else
+			{
+				return "item consumable status changed to false";
 			}
 
 		}

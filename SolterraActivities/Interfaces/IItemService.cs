@@ -33,6 +33,10 @@ namespace SolterraActivities.Interfaces
 
 		Task<string> UnlinkItemToType(int itemId, int typeId);
 
+		// switch IsConsumable to true or false
+
+		Task<string> SwitchIsConsumable(int itemId);
+
 		// edit existing item
 
 		Task<CreateItemDto> EditItem(int id, string name, string description, int value);
