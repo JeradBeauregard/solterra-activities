@@ -22,6 +22,7 @@
 	<div class="container py-5">
 		<h1 class="mb-4 text-center">User Details: <span class="text-primary">@userDetails.User.Username</span></h1>
 
+		<!-- Basic Info Card -->
 		<div class="card shadow-sm p-4 mx-auto mb-4" style="max-width: 600px;">
 			<ul class="list-group list-group-flush">
 				<li class="list-group-item"><strong>Username:</strong> @userDetails.User.Username</li>
@@ -63,13 +64,14 @@
 		<!-- Inventory Table -->
 		<h3 class="mt-4">Inventory of <span class="text-primary">@userDetails.User.Username</span></h3>
 		<div class="table-responsive mb-5">
-			<table class="table table-striped table-hover">
+			<table class="table table-striped table-hover align-middle">
 				<thead class="table-dark">
 					<tr>
 						<th>Item Name</th>
-						<th>Item Quantity</th>
-						<th>Item Details</th>
-						<th>Delete Entry</th>
+						<th>Quantity</th>
+						<th>Details</th>
+						<th>Delete</th>
+						<th>Use on Pet</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -102,13 +104,27 @@
 									<button type="submit" class="btn btn-danger btn-sm">🗑️ Delete</button>
 								</form>
 							</td>
+							<td>
+								<form method="post" action="/UserPage/UseItemOnPet" class="d-flex gap-2 align-items-center">
+									<input type="hidden" name="userId" value="@userDetails.User.Id" />
+									<input type="hidden" name="itemId" value="@inventory.ItemId" />
+									<select name="petId" class="form-select form-select-sm" required>
+										<option disabled selected value="">-- Select Pet --</option>
+										@foreach (var pet in userDetails.Pets)
+										{
+											<option value="@pet.Id">@pet.Name</option>
+										}
+									</select>
+									<button type="submit" class="btn btn-sm btn-outline-primary">✨ Use</button>
+								</form>
+							</td>
 						</tr>
 					}
 				</tbody>
 			</table>
 		</div>
 
-		<!-- Pet Table -->
+		<!-- Pets Table -->
 		<h3 class="mt-4">Pets</h3>
 		<div class="table-responsive">
 			<table class="table table-bordered table-hover">
@@ -116,9 +132,9 @@
 					<tr>
 						<th>Pet Name</th>
 						<th>Species</th>
-						<th>Pet Details</th>
-						<th>Select As Active</th>
-						<th>Active Pet</th>
+						<th>Details</th>
+						<th>Set Active</th>
+						<th>Status</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -127,7 +143,9 @@
 						<tr>
 							<td>@pet.Name</td>
 							<td>@pet.SpeciesName</td>
-							<td><a href="/PetPage/Details/@pet.Id" class="btn btn-outline-primary btn-sm">🔍 View</a></td>
+							<td>
+								<a href="/PetPage/Details/@pet.Id" class="btn btn-outline-primary btn-sm">🔍 View</a>
+							</td>
 							<td>
 								<form method="post" action="/UserPage/UpdateActivePet">
 									<input type="hidden" name="userId" value="@userDetails.User.Id" />
@@ -144,12 +162,12 @@
 								{
 									<span class="badge bg-secondary">Inactive</span>
 								}
+							</td>
 						</tr>
 					}
 				</tbody>
 			</table>
 		</div>
-
 	</div>
 </body>
 </html>

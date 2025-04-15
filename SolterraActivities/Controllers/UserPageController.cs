@@ -83,6 +83,14 @@ namespace SolterraActivities.Controllers
 			return View(userDetails);
 		}
 
+		// use item on pet
+
+		public async Task<IActionResult> UseItemOnPet(int userId, int petId, int itemId)
+		{
+			string result = await _inventoryService.UseItemOnPet(userId, petId, itemId);
+			return RedirectToAction("Details", new { id = userId });
+		}
+
 		// Delete
 
 		public async Task<IActionResult> ConfirmDelete(int Id)

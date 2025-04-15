@@ -23,6 +23,8 @@ namespace SolterraActivities.Interfaces
 
 		Task<string> UpdateQuantity(int id, int quantity);
 
+		Task<string> UseItemOnPet(int userId, int petId, int itemId);
+
 
 			//Delete
 			// Delete inventory row/entry
