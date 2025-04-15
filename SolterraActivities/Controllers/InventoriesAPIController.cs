@@ -184,5 +184,29 @@ namespace SolterraActivities.Controllers
         }
 
 
-    }
+		/// <summary>
+		/// Applies the effects of an item to a pet if owned by the user, and updates the pet's stats accordingly.
+		/// If the item is consumable, its quantity is decremented or removed from inventory.
+		/// </summary>
+		/// <param name="userId">The ID of the user performing the action.</param>
+		/// <param name="petId">The ID of the pet receiving the item's effects.</param>
+		/// <param name="itemId">The ID of the item being used.</param>
+		/// <example>
+		/// POST api/InventoryAPI/UseItemOnPet/2/3/5
+		/// </example>
+		/// <returns>
+		/// A structured response containing the result of the action:
+		/// on success: "item used on pet"
+		/// on failure: "item not found in inventory" or "pet not found"
+		/// </returns>
+
+		[HttpPost("UseItemOnPet/{userId}/{petId}/{itemId}")]
+		public async Task<ActionResult<string>> UseItemOnPet(int userId, int petId, int itemId)
+		{
+			string result = await _inventoryService.UseItemOnPet(userId, petId, itemId);
+			return result;
+		}
+
+
+	}
 }

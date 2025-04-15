@@ -546,6 +546,42 @@
   },
   {
     "ContainingType": "SolterraActivities.Controllers.InventoriesAPIController",
+    "Method": "UseItemOnPet",
+    "RelativePath": "api/InventoriesAPI/UseItemOnPet/{userId}/{petId}/{itemId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "petId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SolterraActivities.Controllers.InventoriesAPIController",
     "Method": "ListUserInventory",
     "RelativePath": "api/InventoriesAPI/UserInventory/{userId}",
     "HttpMethod": "GET",

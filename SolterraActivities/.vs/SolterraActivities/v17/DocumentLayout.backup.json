@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\views\\itempage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\itempage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\controllers\\userpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\userpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\controllers\\itempagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\itempagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\views\\userpage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\userpage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\controllers\\inventoriesapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\inventoriesapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\interfaces\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:interfaces\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\controllers\\itemsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\itemsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\interfaces\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:interfaces\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ItemService.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Services\\ItemService.cs",
-              "RelativeDocumentMoniker": "Services\\ItemService.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Services\\ItemService.cs",
-              "RelativeToolTip": "Services\\ItemService.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwEEAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Pet.cs",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Models\\Pet.cs",
+              "RelativeDocumentMoniker": "Models\\Pet.cs",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Models\\Pet.cs",
+              "RelativeToolTip": "Models\\Pet.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T19:26:35.895Z",
+              "WhenOpened": "2025-04-15T22:05:01.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IItemService.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Interfaces\\IItemService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IItemService.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Interfaces\\IItemService.cs",
-              "RelativeToolTip": "Interfaces\\IItemService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA5wCUAAAAuAAAAAAAAAA==",
+              "Title": "InventoryService.cs",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Services\\InventoryService.cs",
+              "RelativeDocumentMoniker": "Services\\InventoryService.cs",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Services\\InventoryService.cs",
+              "RelativeToolTip": "Services\\InventoryService.cs",
+              "ViewState": "AgIAADsBAAAAAAAAAAAIwPcAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T19:25:52.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ItemsAPIController.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\ItemsAPIController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ItemsAPIController.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\ItemsAPIController.cs",
-              "RelativeToolTip": "Controllers\\ItemsAPIController.cs",
-              "ViewState": "AgIAACsBAAAAAAAAAAAuwD0BAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T19:23:54.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\ItemPage\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\ItemPage\\Details.cshtml",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\ItemPage\\Details.cshtml",
-              "RelativeToolTip": "Views\\ItemPage\\Details.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAADwvywAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-15T17:56:48.298Z",
+              "WhenOpened": "2025-04-15T22:01:41.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ItemPageController.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\ItemPageController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ItemPageController.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\ItemPageController.cs",
-              "RelativeToolTip": "Controllers\\ItemPageController.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowFkAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T19:32:13.093Z",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\UserPage\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserPage\\Details.cshtml",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\UserPage\\Details.cshtml",
+              "RelativeToolTip": "Views\\UserPage\\Details.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAIwK0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T22:01:29.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Models\\Item.cs",
-              "RelativeDocumentMoniker": "Models\\Item.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Models\\Item.cs",
-              "RelativeToolTip": "Models\\Item.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAADwvyYAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "IInventoryService.cs",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Interfaces\\IInventoryService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IInventoryService.cs",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Interfaces\\IInventoryService.cs",
+              "RelativeToolTip": "Interfaces\\IInventoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T19:31:26.083Z",
+              "WhenOpened": "2025-04-15T22:01:18.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserPageController.cs",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\UserPageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserPageController.cs",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\UserPageController.cs",
+              "RelativeToolTip": "Controllers\\UserPageController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAwwFsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T21:56:18.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InventoriesAPIController.cs",
+              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\InventoriesAPIController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InventoriesAPIController.cs",
+              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\InventoriesAPIController.cs",
+              "RelativeToolTip": "Controllers\\InventoriesAPIController.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAIwM8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T21:56:01.673Z",
               "EditorCaption": ""
             }
           ]
