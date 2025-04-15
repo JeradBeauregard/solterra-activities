@@ -85,7 +85,8 @@ POST    /api/UserActivity/UnlinkUser/{id}  - Delete a user activity association
 GET     /api/InventoriesAPI                                  - List all inventories  
 GET     /api/InventoriesAPI/UserInventory/{userId}           - Get a specific user's inventory  
 POST    /api/InventoriesAPI/AddToInventory/{userId}/{quantity}/{itemId} - Add item to inventory  
-POST    /api/InventoriesAPI/EditInventory/{id}/{userId}/{itemId}/{quantity} - Edit inventory entry  
+POST    /api/InventoriesAPI/EditInventory/{id}/{userId}/{itemId}/{quantity} - Edit inventory entry
+POST    /api/InventoriesAPI/UseItemOnPet/{userId}/{petId}/{itemId}  - Use and item on a pet, change pet stats based on item effects,  if consumable reduce quantity  -NEW  
 DELETE  /api/InventoriesAPI/{id}                             - Delete an inventory entry  
 ```
 
@@ -104,7 +105,8 @@ DELETE  /api/ItemsAPI/{id}                                 - Delete item by ID
 POST    /api/ItemsAPI/ItemsAPI/LinkItemToType/{itemId}/{typeId}     - Link item to type  
 POST    /api/ItemsAPI/ItemsAPI/UnlinkItemToType/{itemId}/{typeId}   - Unlink item from type  
 POST    /api/ItemsAPI/ItemsAPI/CreateItem/{name}/{description}/{value} - Create new item  
-POST    /api/ItemsAPI/ItemsAPI/EditItem                    - Edit existing item  
+POST    /api/ItemsAPI/ItemsAPI/EditItem                    - Edit existing item
+POST    /api/ItemsAPI/SwitchIsConsumable/{itemId}          - Switch isConsumable between true and false -NEW  
 ```
 
 ---
@@ -119,6 +121,21 @@ GET     /api/ItemTypesAPI/{id}                                 - Get item type b
 GET     /api/ItemTypesAPI/ItemTypesAPI/GetTypesForItem         - Get types linked to an item  
 POST    /api/ItemTypesAPI/ItemTypesAPI/CreateItemType/{type}   - Create new item type  
 DELETE  /api/ItemTypesAPI/ItemTypesAPI/DeleteItemType/{id}     - Delete item type by ID  
+```
+
+---
+
+## ItemEffects Jerad  
+
+`/api/ItemEffectsAPI/`  
+
+```
+
+GET     /api/ItemEffectApi/GetItemEffects/{itemId}                  - Get all effects for a specific item  -NEW  
+POST    /api/ItemEffectApi/AddItemEffect/{itemId}                   - Add a new effect to an item  -NEW  
+PUT     /api/ItemEffectApi/UpdateItemEffect/{itemEffectId}          - Update an existing item effect  -NEW  
+DELETE  /api/ItemEffectApi/DeleteItemEffect/{itemEffectId}          - Delete an item effect by ID  -NEW  
+
 ```
 
 ---
