@@ -82,12 +82,12 @@ POST    /api/UserActivity/UnlinkUser/{id}  - Delete a user activity association
 `/api/InventoriesAPI/`
 
 ```
-GET     /api/InventoriesAPI                                  - List all inventories  
-GET     /api/InventoriesAPI/UserInventory/{userId}           - Get a specific user's inventory  
-POST    /api/InventoriesAPI/AddToInventory/{userId}/{quantity}/{itemId} - Add item to inventory  
+GET     /api/InventoriesAPI                                                 - List all inventories  
+GET     /api/InventoriesAPI/UserInventory/{userId}                          - Get a specific user's inventory  
+POST    /api/InventoriesAPI/AddToInventory/{userId}/{quantity}/{itemId}     - Add item to inventory  
 POST    /api/InventoriesAPI/EditInventory/{id}/{userId}/{itemId}/{quantity} - Edit inventory entry
-POST    /api/InventoriesAPI/UseItemOnPet/{userId}/{petId}/{itemId}  - Use and item on a pet, change pet stats based on item effects,  if consumable reduce quantity  -NEW  
-DELETE  /api/InventoriesAPI/{id}                             - Delete an inventory entry  
+POST    /api/InventoriesAPI/UseItemOnPet/{userId}/{petId}/{itemId}          - Use an item on a pet -NEW   
+DELETE  /api/InventoriesAPI/{id}                                            - Delete an inventory entry  
 ```
 
 ---
@@ -97,16 +97,16 @@ DELETE  /api/InventoriesAPI/{id}                             - Delete an invento
 `/api/ItemsAPI/`
 
 ```
-GET     /api/ItemsAPI                                      - List all items (no types)  
-GET     /api/ItemsAPI/WithTypes                            - List all items with types  
-GET     /api/ItemsAPI/ItemsAPI/GetItemsForType             - Get items by type  
-GET     /api/ItemsAPI/{id}                                 - Get item by ID  
-DELETE  /api/ItemsAPI/{id}                                 - Delete item by ID  
-POST    /api/ItemsAPI/ItemsAPI/LinkItemToType/{itemId}/{typeId}     - Link item to type  
-POST    /api/ItemsAPI/ItemsAPI/UnlinkItemToType/{itemId}/{typeId}   - Unlink item from type  
+GET     /api/ItemsAPI                                                  - List all items (no types)  
+GET     /api/ItemsAPI/WithTypes                                        - List all items with types  
+GET     /api/ItemsAPI/ItemsAPI/GetItemsForType                         - Get items by type  
+GET     /api/ItemsAPI/{id}                                             - Get item by ID  
+DELETE  /api/ItemsAPI/{id}                                             - Delete item by ID  
+POST    /api/ItemsAPI/ItemsAPI/LinkItemToType/{itemId}/{typeId}        - Link item to type  
+POST    /api/ItemsAPI/ItemsAPI/UnlinkItemToType/{itemId}/{typeId}      - Unlink item from type  
 POST    /api/ItemsAPI/ItemsAPI/CreateItem/{name}/{description}/{value} - Create new item  
-POST    /api/ItemsAPI/ItemsAPI/EditItem                    - Edit existing item
-POST    /api/ItemsAPI/SwitchIsConsumable/{itemId}          - Switch isConsumable between true and false -NEW  
+POST    /api/ItemsAPI/ItemsAPI/EditItem                                - Edit existing item
+POST    /api/ItemsAPI/SwitchIsConsumable/{itemId}                      - Switch isConsumable between true and false -NEW  
 ```
 
 ---
@@ -145,11 +145,11 @@ DELETE  /api/ItemEffectApi/DeleteItemEffect/{itemEffectId}          - Delete an 
 `/api/UsersAPI/`
 
 ```
-PUT     /api/UsersAPI/updateInventorySpace/{userId}/{spaceRemoved}  - Update inventory space  
-GET     /api/UsersAPI                                               - List all users  
-GET     /api/UsersAPI/{id}                                          - Get user by ID  
-DELETE  /api/UsersAPI/{id}                                          - Delete user by ID  
-POST    /api/UsersAPI/PostUser/{username}/{password}               - Create new user  
+PUT     /api/UsersAPI/updateInventorySpace/{userId}/{spaceRemoved}    - Update inventory space  
+GET     /api/UsersAPI                                                 - List all users  
+GET     /api/UsersAPI/{id}                                            - Get user by ID  
+DELETE  /api/UsersAPI/{id}                                            - Delete user by ID  
+POST    /api/UsersAPI/PostUser/{username}/{password}                  - Create new user  
 POST    /api/UsersAPI/EditUser/{id}/{username}/{password}/{solshards} - Edit user  
 ```
 
@@ -174,7 +174,7 @@ DELETE  /api/PetApi/DeletePet      - Delete a pet
 `/api/SpeciesApi/`
 
 ```
-GET     /api/SpeciesApi/List        - List all species  
+GET     /api/SpeciesApi/List            - List all species  
 POST    /api/SpeciesApi/CreateSpecies   - Create new species  
 POST    /api/SpeciesApi/UpdateSpecies   - Update existing species  
 DELETE  /api/SpeciesApi/DeleteSpecies   - Delete existing species  
