@@ -40,5 +40,7 @@ namespace SolterraActivities.Data
         public DbSet<Pet> Pets { get; set; }
 
         public DbSet<Species> Species { get; set; }
+
+        public DbSet<ItemEffect> ItemEffects { get; set; }
 	}
 }

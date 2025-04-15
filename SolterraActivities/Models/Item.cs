@@ -20,6 +20,13 @@ namespace SolterraActivities.Models
 
 		public virtual List<ItemxType> ItemxType { get; set; }
 
+		// for item effects
+
+		public bool IsConsumable { get; set; } = false;
+
+		public ICollection<ItemEffect> Effects { get; set; } = new List<ItemEffect>();
+
+
 	}
 
 	public class ItemDto
