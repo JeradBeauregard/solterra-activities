@@ -19,7 +19,8 @@ html {
 }
 
 
-.btn-primary, .btn {
+.btn-primary, .btn-link {
+
     --bs-btn-color: #EDF4ED !important;
     --bs-btn-bg: #38915A !important;
     --bs-btn-border-color: #38915A !important;
@@ -31,6 +32,21 @@ html {
     --bs-btn-active-border-color: #38915A !important;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
+    border-radius:10px !important;
+}
+
+#login-submit, #registerSubmit {
+    color: #EDF4ED !important;
+    background: #38915A !important;
+    border-color: #38915A !important;
+    border-color: #68B184 !important;
+    border-radius: 10px !important;
+}
+
+#login-submit:hover, #registerSubmit:hover {
+    color: #EDF4ED !important;
+    background: #68B184 !important;
+    border-radius: 10px !important;
 }
 
 
@@ -55,23 +71,33 @@ body {
 }
 
 
-.navbar-brand, .card-title {
+a.navbar-brand {
     color: #38915A !important;
     font-family: "Sour Gummy", sans-serif;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 .card-title {
     color: #38915A !important;
     font-family: "Sour Gummy", sans-serif;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 h1 {
+    color: #38915A !important;
+    font-family: "Sour Gummy", sans-serif;
     font-size: 25px;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.card {
+    border-color: #ABD1B5 !important;
+    border-radius: 25px !important;
+    border-style: dashed !important;
+    border-width:3px !important;
+    padding:8px !important;
 }
 
