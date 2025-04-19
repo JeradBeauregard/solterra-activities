@@ -41,6 +41,7 @@ namespace SolterraActivities.Controllers
 
         // GET: ActivityMoodPage/Details/{id}
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Details(int id)
         {
             ActivityMoodDto? activityMoodDto = await _activityMoodService.FindActivityMood(id);
@@ -54,6 +55,7 @@ namespace SolterraActivities.Controllers
         }
 
         // GET: ActivityMoodPage/New
+        [Authorize]
         [Authorize]
         public async Task<IActionResult> New()
         {

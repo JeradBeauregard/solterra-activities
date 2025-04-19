@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -56,6 +57,7 @@ namespace SolterraActivities.Controllers
 		// GET: api/ItemTypesAPI
 
 		[HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<ItemType>>> GetItemTypes()
         {
             return await _context.ItemTypes.ToListAsync();
@@ -81,6 +83,7 @@ namespace SolterraActivities.Controllers
 
 		// GET: api/ItemTypesAPI/5
 		[HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<ItemType>> GetItemType(int id)
         {
             ItemType itemType = await _itemTypesService.GetItemType(id);
@@ -118,6 +121,7 @@ namespace SolterraActivities.Controllers
 		/// 
 		// get types for an item
 		[HttpGet("ItemTypesAPI/GetTypesForItem")]
+        [Authorize]
 
         public async Task<IEnumerable<ItemTypeDto>> GetTypesForItem(int itemId)
         {
@@ -146,6 +150,7 @@ namespace SolterraActivities.Controllers
 		// create new type
 
 		[HttpPost("ItemTypesAPI/CreateItemType/{type}")]
+        [Authorize]
 
         public async Task<ItemType> CreateItemType(string type)
         {
@@ -169,8 +174,9 @@ namespace SolterraActivities.Controllers
 		// delete Item type
 
 		[HttpDelete("ItemTypesAPI/DeleteItemType/{id}")]
+        [Authorize]
 
-		public async Task<string> DeleteItemType(int id)
+        public async Task<string> DeleteItemType(int id)
 		{
 			string Result = await _itemTypesService.DeleteItemType(id);
 			return Result;

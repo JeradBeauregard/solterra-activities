@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SolterraActivities",
+    "\\SolterraActivities\\Controllers"
   ],
+  "SelectedNode": "\\SolterraActivities\\Controllers\\ActivityController.cs",
   "PreviewInSolutionExplorer": false
 }

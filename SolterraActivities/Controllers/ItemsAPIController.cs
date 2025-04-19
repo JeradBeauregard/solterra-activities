@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -67,6 +68,7 @@ namespace SolterraActivities.Controllers
 		// get items
 		// GET: api/ItemsAPI
 		[HttpGet]
+        [Authorize]
         public async Task<IEnumerable<Item>> GetItems()
         {
             return await _itemService.GetItems();
@@ -109,6 +111,7 @@ namespace SolterraActivities.Controllers
 		*/
 		/// </example>
 		[HttpGet("WithTypes")]
+        [Authorize]
 
         public async Task<IEnumerable<ItemWithTypesDto>> GetItemsWithTypes()
 		{
@@ -142,8 +145,9 @@ namespace SolterraActivities.Controllers
 		// returns all items of a given type
 
 		[HttpGet("ItemsAPI/GetItemsForType")]
+        [Authorize]
 
-		public async Task<IEnumerable<ItemsForTypeDto>> GetItemsForType(int typeId)
+        public async Task<IEnumerable<ItemsForTypeDto>> GetItemsForType(int typeId)
         {
 			IEnumerable<ItemsForTypeDto> results = await _itemService.GetItemsForType(typeId);
 			return results;
@@ -185,6 +189,7 @@ namespace SolterraActivities.Controllers
 
 		// GET: api/ItemsAPI/5
 		[HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<ItemDto>> GetItem(int id)
         {
             ItemDto item = await _itemService.GetItem(id);
@@ -205,6 +210,7 @@ namespace SolterraActivities.Controllers
 
 		// DELETE: api/ItemsAPI/5
 		[HttpDelete("{id}")]
+        [Authorize]
         public async Task<string> DeleteItem(int id)
         {
            string result = await _itemService.DeleteItem(id);
@@ -226,6 +232,7 @@ namespace SolterraActivities.Controllers
 
 
 		[HttpPost("ItemsAPI/LinkItemToType/{itemId}/{typeId}")]
+        [Authorize]
         public async Task<string> LinkItemToType(int itemId, int typeId)
 		{
 			string result = await _itemService.LinkItemToType(itemId, typeId);
@@ -246,7 +253,8 @@ namespace SolterraActivities.Controllers
 		/// </example>
 
 		[HttpPost("ItemsAPI/UnlinkItemToType/{itemId}/{typeId}")]
-		public async Task<string> UnlinkItemToType(int itemId, int typeId)
+        [Authorize]
+        public async Task<string> UnlinkItemToType(int itemId, int typeId)
 		{
 			string result = await _itemService.UnlinkItemToType(itemId, typeId);
 			return result;
@@ -272,8 +280,9 @@ namespace SolterraActivities.Controllers
 		/// </example>
 		/// 
 		[HttpPost("ItemsAPI/CreateItem/{name}/{description}/{value}")]
+        [Authorize]
 
-		public async Task<CreateItemDto> CreateItem(string name, string description, int value)
+        public async Task<CreateItemDto> CreateItem(string name, string description, int value)
         {
 
             CreateItemDto result = await _itemService.CreateItem(name, description, value);
@@ -302,16 +311,18 @@ namespace SolterraActivities.Controllers
 		/// </example>
 		/// 
 		[HttpPost("ItemsAPI/EditItem")]
+        [Authorize]
 
-		public async Task<CreateItemDto> EditItem(int id, string name, string description, int value)
+        public async Task<CreateItemDto> EditItem(int id, string name, string description, int value)
 		{
 			CreateItemDto result = await _itemService.EditItem(id, name, description, value);
 			return result;
 		}
 
 		[HttpPost("ItemsAPI/SwitchIsConsumable/{itemId}")]
+        [Authorize]
 
-		public async Task<string> SwitchIsConsumable(int itemId)
+        public async Task<string> SwitchIsConsumable(int itemId)
 		{
 			string result = await _itemService.SwitchIsConsumable(itemId);
 			return result;

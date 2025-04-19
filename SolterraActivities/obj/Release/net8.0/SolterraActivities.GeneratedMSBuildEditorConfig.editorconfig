@@ -1,0 +1,255 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SolterraActivities
+build_property.RootNamespace = SolterraActivities
+build_property.ProjectDir = D:\webdev-projects\solterra-activities-final\solterra-activities\SolterraActivities\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\webdev-projects\solterra-activities-final\solterra-activities\SolterraActivities
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ActivityPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdHlQYWdlXENvbmZpcm1EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ActivityPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdHlQYWdlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ActivityPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdHlQYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ActivityPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdHlQYWdlXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ActivityPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdHlQYWdlXE5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/HobbyPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9iYnlQYWdlXENvbmZpcm1EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/HobbyPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9iYnlQYWdlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/HobbyPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9iYnlQYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/HobbyPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9iYnlQYWdlXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/HobbyPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9iYnlQYWdlXE5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/InventoryPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5UGFnZVxDb25maXJtRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/InventoryPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5UGFnZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/InventoryPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5UGFnZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/InventoryPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5UGFnZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/InventoryPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5UGFnZVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ItemPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVBhZ2VcQ29uZmlybURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ItemPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVBhZ2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ItemPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVBhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ItemPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVBhZ2VcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ItemPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVBhZ2VcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ItemTypePage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVR5cGVQYWdlXENvbmZpcm1EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ItemTypePage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVR5cGVQYWdlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ItemTypePage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVR5cGVQYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ItemTypePage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVR5cGVQYWdlXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/ItemTypePage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVR5cGVQYWdlXE5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/MoodPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZFBhZ2VcQ29uZmlybURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/MoodPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZFBhZ2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/MoodPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZFBhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/MoodPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZFBhZ2VcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/MoodPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZFBhZ2VcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/PetPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0UGFnZVxDb25maXJtRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/PetPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0UGFnZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/PetPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0UGFnZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/PetPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0UGFnZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/PetPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0UGFnZVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/SpeciesPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2llc1BhZ2VcQ29uZmlybURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/SpeciesPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2llc1BhZ2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/SpeciesPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2llc1BhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/SpeciesPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2llc1BhZ2VcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/SpeciesPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2llc1BhZ2VcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/UserActivityPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjdGl2aXR5UGFnZVxDb25maXJtRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/UserActivityPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjdGl2aXR5UGFnZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/UserActivityPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjdGl2aXR5UGFnZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/UserActivityPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjdGl2aXR5UGFnZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/UserActivityPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjdGl2aXR5UGFnZVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/UserPage/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhZ2VcQ29uZmlybURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/UserPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhZ2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/UserPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/UserPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhZ2VcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/UserPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhZ2VcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/webdev-projects/solterra-activities-final/solterra-activities/SolterraActivities/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-slpxd8mv22

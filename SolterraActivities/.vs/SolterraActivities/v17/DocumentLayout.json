@@ -1,29 +1,56 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\",
+  "WorkspaceRootPath": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\controllers\\userpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities-final\\solterra-activities\\solterraactivities\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities-final\\solterra-activities\\solterraactivities\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities-final\\solterra-activities\\solterraactivities\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities-final\\solterra-activities\\solterraactivities\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_SolterraActivities_5499b605_4c00_47ac_909f_c51a8915e46c/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities-final\\solterra-activities\\solterraactivities\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities-final\\solterra-activities\\solterraactivities\\controllers\\hobbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\hobbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities-final\\solterra-activities\\solterraactivities\\controllers\\userpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\userpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\views\\userpage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Data\\Migrations\\20250418211749_newuserroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20250418211749_newuserroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities-final\\solterra-activities\\solterraactivities\\views\\userpage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:views\\userpage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\controllers\\inventoriesapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:controllers\\inventoriesapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities-final\\solterra-activities\\solterraactivities\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities-final\\solterra-activities\\solterraactivities\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|c:\\users\\jerad\\desktop\\solterra-activities\\solterraactivities\\interfaces\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|d:\\webdev-projects\\solterra-activities-final\\solterra-activities\\solterraactivities\\interfaces\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D2548C1-1689-42C5-9B3D-9548260C2850}|SolterraActivities.csproj|solutionrelative:interfaces\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,54 +61,129 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Pet.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Models\\Pet.cs",
-              "RelativeDocumentMoniker": "Models\\Pet.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Models\\Pet.cs",
-              "RelativeToolTip": "Models\\Pet.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T22:05:01.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InventoryService.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Services\\InventoryService.cs",
-              "RelativeDocumentMoniker": "Services\\InventoryService.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Services\\InventoryService.cs",
-              "RelativeToolTip": "Services\\InventoryService.cs",
-              "ViewState": "AgIAADsBAAAAAAAAAAAIwPcAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T22:01:41.235Z",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-19T01:20:46.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\UserPage\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\UserPage\\Details.cshtml",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Views\\UserPage\\Details.cshtml",
-              "RelativeToolTip": "Views\\UserPage\\Details.cshtml",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAIwK0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-15T22:01:29.921Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAlwBcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T22:29:12.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUserService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Interfaces\\IUserService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T22:26:14.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAuwJ4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T22:23:22.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_SolterraActivities_5499b605_4c00_47ac_909f_c51a8915e46c/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-04-18T21:20:26.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T22:16:25.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HobbyController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Controllers\\HobbyController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HobbyController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Controllers\\HobbyController.cs",
+              "RelativeToolTip": "Controllers\\HobbyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T21:33:23.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserPageController.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Controllers\\UserPageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserPageController.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Controllers\\UserPageController.cs",
+              "RelativeToolTip": "Controllers\\UserPageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T21:56:18.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20250418211749_newuserroles.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Data\\Migrations\\20250418211749_newuserroles.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250418211749_newuserroles.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Data\\Migrations\\20250418211749_newuserroles.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250418211749_newuserroles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T21:17:50.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "IInventoryService.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Interfaces\\IInventoryService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Interfaces\\IInventoryService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IInventoryService.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Interfaces\\IInventoryService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Interfaces\\IInventoryService.cs",
               "RelativeToolTip": "Interfaces\\IInventoryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -90,28 +192,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserPageController.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\UserPageController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserPageController.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\UserPageController.cs",
-              "RelativeToolTip": "Controllers\\UserPageController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAwwFsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T21:56:18.003Z",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Views\\UserPage\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserPage\\Details.cshtml",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Views\\UserPage\\Details.cshtml",
+              "RelativeToolTip": "Views\\UserPage\\Details.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAIwK0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T22:01:29.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InventoriesAPIController.cs",
-              "DocumentMoniker": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\InventoriesAPIController.cs",
-              "RelativeDocumentMoniker": "Controllers\\InventoriesAPIController.cs",
-              "ToolTip": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\Controllers\\InventoriesAPIController.cs",
-              "RelativeToolTip": "Controllers\\InventoriesAPIController.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAAIwM8AAAADAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "InventoryService.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Services\\InventoryService.cs",
+              "RelativeDocumentMoniker": "Services\\InventoryService.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Services\\InventoryService.cs",
+              "RelativeToolTip": "Services\\InventoryService.cs",
+              "ViewState": "AgIAADsBAAAAAAAAAAAIwPcAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T21:56:01.673Z",
+              "WhenOpened": "2025-04-15T22:01:41.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Pet.cs",
+              "DocumentMoniker": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Models\\Pet.cs",
+              "RelativeDocumentMoniker": "Models\\Pet.cs",
+              "ToolTip": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\Models\\Pet.cs",
+              "RelativeToolTip": "Models\\Pet.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T22:05:01.303Z",
               "EditorCaption": ""
             }
           ]

@@ -9,6 +9,7 @@ using SolterraActivities.Data;
 using SolterraActivities.Models;   
 using SolterraActivities.Services;
 using SolterraActivities.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SolterraActivities.Controllers
 {
@@ -42,6 +43,7 @@ namespace SolterraActivities.Controllers
         // get inventory join with user and item table to view information
         // GET: api/InventoriesAPI
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<Inventory>>> ListInventories()
         {
             // new empty list of Dtos
@@ -82,6 +84,7 @@ namespace SolterraActivities.Controllers
         //read
         // GET: api/InventoriesAPI/Item/5
         [HttpGet("UserInventory/{userId}")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<InventoryDto>>> ListUserInventory(int userId)
         {
             // new empty list of Dtos
@@ -123,6 +126,7 @@ namespace SolterraActivities.Controllers
         // this is my inventory add, simpler inputs than a fulljson like the template
         // POST: api/InventoriesAPI/AddToInventory
         [HttpPost("AddToInventory/{userId}/{quantity}/{itemId}")]
+        [Authorize]
         public async Task<ActionResult<string>> AddToInventory(int userId, int itemId, int quantity)
         {
 
@@ -155,7 +159,8 @@ namespace SolterraActivities.Controllers
 		/// </returns>
 		// edit inventory
 		[HttpPost("EditInventory/{id}/{userId}/{itemId}/{quantity}")]
-		public async Task<ActionResult<InventoryDto>> EditInventory(int id, int userId, int itemId, int quantity)
+        [Authorize]
+        public async Task<ActionResult<InventoryDto>> EditInventory(int id, int userId, int itemId, int quantity)
         {
             InventoryDto Result = await _inventoryService.EditInventory(id,userId,itemId,quantity);
             return Ok(Result);
@@ -175,6 +180,7 @@ namespace SolterraActivities.Controllers
 		// delete an inventory entry by id
 		// DELETE: api/InventoriesAPI/5
 		[HttpDelete("{id}")]
+        [Authorize]
         public async Task<string> DeleteInventory(int id)
         {
             
@@ -201,7 +207,8 @@ namespace SolterraActivities.Controllers
 		/// </returns>
 
 		[HttpPost("UseItemOnPet/{userId}/{petId}/{itemId}")]
-		public async Task<ActionResult<string>> UseItemOnPet(int userId, int petId, int itemId)
+        [Authorize]
+        public async Task<ActionResult<string>> UseItemOnPet(int userId, int petId, int itemId)
 		{
 			string result = await _inventoryService.UseItemOnPet(userId, petId, itemId);
 			return result;

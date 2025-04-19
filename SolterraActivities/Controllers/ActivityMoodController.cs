@@ -30,6 +30,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/ActivityMood/List -> [{ActivityMoodDto},{ActivityMoodDto},..]
         /// </example>
         [HttpGet("List")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<ActivityMoodDto>>> ListActivityMoods()
         {
             IEnumerable<ActivityMoodDto> activityMoodDtos = await _activityMoodService.ListActivityMoods();
@@ -50,6 +51,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/ActivityMood/Find/1 -> {ActivityMoodDto}
         /// </example>
         [HttpGet("Find/{id}")]
+        [Authorize]
         public async Task<ActionResult<ActivityMoodDto>> FindActivityMood(int id)
         {
             var activityMoodDto = await _activityMoodService.FindActivityMood(id);
@@ -81,6 +83,7 @@ namespace SolterraActivities.Controllers
         /// </example>
         [HttpPost("Add")]
         [Authorize]
+
         public async Task<ActionResult<ActivityMood>> AddActivityMood(ActivityMoodDto activityMoodDto)
         {
             ServiceResponse response = await _activityMoodService.AddActivityMood(activityMoodDto);
@@ -116,6 +119,7 @@ namespace SolterraActivities.Controllers
         /// </example>
         [HttpPost("Update/{id}")]
         [Authorize]
+
         public async Task<ActionResult> UpdateActivityMood(int id, ActivityMoodDto activityMoodDto)
         {
             if (id != activityMoodDto.ActivityMoodId)
@@ -180,6 +184,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/ActivityMood/ListForActivity/3 -> [{ActivityMoodDto},{ActivityMoodDto},..]
         /// </example>
         [HttpGet("ListForActivity/{activityId}")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<ActivityMoodDto>>> ListActivityMoodsForActivity(int activityId)
         {
             var activityMoods = await _activityMoodService.ListActivityMoodsForActivity(activityId);

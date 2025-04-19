@@ -1,132 +1,145 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SolterraActivities.Interfaces;
 using SolterraActivities.Models;
 
 namespace SolterraActivities.Controllers
 {
-	public class UserPageController : Controller
-	{
+    
+    public class UserPageController : Controller
+    {
+        // Dependency Injection	
+        private readonly IUserService _userService;
+        private readonly IInventoryService _inventoryService;
+        private readonly IItemService _itemService;
+        private readonly IPetService _petService;
 
-		// Dependancy Injection	
-		private readonly IUserService _userService;
-		private readonly IInventoryService _inventoryService;
-		private readonly IItemService _itemService;
-		private readonly IPetService _petService;
+        public UserPageController(IUserService userService, IInventoryService inventoryService, IItemService itemService, IPetService petService)
+        {
+            _userService = userService;
+            _inventoryService = inventoryService;
+            _itemService = itemService;
+            _petService = petService;
+        }
 
-		public UserPageController(IUserService userService, IInventoryService inventoryService, IItemService itemService, IPetService petService)
-		{
-			_userService = userService; // Dependancy Injection: User Service
-			_inventoryService = inventoryService;
-			_itemService = itemService;
-			_petService = petService;
-		}
+        // List
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> List()
+        {
+            IEnumerable<User> Users = await _userService.GetUsers();
+            return View(Users);
+        }
 
-		// List
+        // New (Create)
+        [HttpGet]
+        [Authorize]
+        public IActionResult New()
+        {
+            return View();
+        }
 
-		public async Task<IActionResult> List()
-		{
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Create(string username, string password)
+        {
+            await _userService.PostUser(username, password);
+            return RedirectToAction("List");
+        }
 
-			IEnumerable<User> Users = await _userService.GetUsers(); // Get Users from User Service
-			return View(Users);
-		}
+        // Add to user inventory
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> AddToInventory(int userId, int itemId, int quantity)
+        {
+            string result = await _inventoryService.AddToInventory(userId, itemId, quantity);
+            return RedirectToAction("Details", new { id = userId });
+        }
 
-		// New (Create)
+        // Update active Pet
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> UpdateActivePet(int UserId, int petId)
+        {
+            string result = await _userService.UpdateActivePet(UserId, petId);
+            return RedirectToAction("Details", new { id = UserId });
+        }
 
-		public IActionResult New()
-		{
-			return View();
-		}
+        // Details
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> Details(int id)
+        {
+            User user = await _userService.GetUser(id);
+            IEnumerable<InventoryDto> inventory = await _inventoryService.ListUserInventory(id);
+            IEnumerable<Item> items = await _itemService.GetItems();
+            IEnumerable<PetDto> pets = await _petService.ListUserPets(id);
 
-		public async Task<IActionResult> Create(string username, string password)
-		{
-			await _userService.PostUser(username, password);
-			return RedirectToAction("List");
-		}
+            items = items.OrderBy(i => i.Name);
 
-		// Add to user inventory
+            UserDetailsViewModel userDetails = new UserDetailsViewModel
+            {
+                User = user,
+                Inventory = inventory,
+                AllItems = items,
+                Pets = pets
+            };
 
-		public async Task<IActionResult> AddToInventory(int userId, int itemId, int quantity)
-		{
-			string result = await _inventoryService.AddToInventory(userId, itemId, quantity);
-			return RedirectToAction("Details", new { id = userId });
-		}
+            return View(userDetails);
+        }
 
+        // Use item on pet
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> UseItemOnPet(int userId, int petId, int itemId)
+        {
+            string result = await _inventoryService.UseItemOnPet(userId, petId, itemId);
+            return RedirectToAction("Details", new { id = userId });
+        }
 
-		// Update active Pet
+        // ConfirmDelete
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> ConfirmDelete(int Id)
+        {
+            User user = await _userService.GetUser(Id);
+            return View(user);
+        }
 
-		public async Task<IActionResult> UpdateActivePet(int UserId, int petId)
-		{
-			string result = await _userService.UpdateActivePet(UserId, petId);
-			return RedirectToAction("Details", new { id = UserId });
-		}
+        // Delete
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Delete(int Id)
+        {
+            await _userService.DeleteUser(Id);
+            return RedirectToAction("List");
+        }
 
-		// Details
+        // Edit
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> Edit(int id)
+        {
+            User user = await _userService.GetUser(id);
+            return View(user);
+        }
 
-		public async  Task<IActionResult> Details(int id)
-		{
-			User user = await _userService.GetUser(id);
-			IEnumerable<InventoryDto> inventory = await _inventoryService.ListUserInventory(id);
-			IEnumerable<Item> items = await  _itemService.GetItems();
-			IEnumerable<PetDto> pets = await _petService.ListUserPets(id);
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> EditUser(int id, string username, string password, int solshards)
+        {
+            await _userService.EditUser(id, username, password, solshards);
+            return RedirectToAction("Details", new { id = id });
+        }
 
-			// Order items alphabetically by name
-			items = items.OrderBy(i => i.Name);
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> UpdateQuantity(int id, int quantity)
+        {
+            await _inventoryService.UpdateQuantity(id, quantity);
+            InventoryDto UserId = await _inventoryService.ListInventory(id);
 
-			UserDetailsViewModel userDetails = new UserDetailsViewModel
-			{
-				User = user,
-				Inventory = inventory,
-				AllItems = items,
-				Pets = pets
-			};
-
-			return View(userDetails);
-		}
-
-		// use item on pet
-
-		public async Task<IActionResult> UseItemOnPet(int userId, int petId, int itemId)
-		{
-			string result = await _inventoryService.UseItemOnPet(userId, petId, itemId);
-			return RedirectToAction("Details", new { id = userId });
-		}
-
-		// Delete
-
-		public async Task<IActionResult> ConfirmDelete(int Id)
-		{
-			
-			User user = await _userService.GetUser(Id);
-
-			return View(user);
-		}
-
-		public async Task<IActionResult> Delete(int Id)
-		{
-			await _userService.DeleteUser(Id);
-			return RedirectToAction("List");
-		}
-
-		// Edit
-
-		public async Task<IActionResult> Edit(int id)
-		{
-			User user = await _userService.GetUser(id);
-			return View(user);
-		}
-
-		public async Task<IActionResult> EditUser(int id, string username, string password,int solshards)
-		{
-			await _userService.EditUser(id, username, password, solshards);
-			return RedirectToAction("Details", new { id = id });
-		}
-
-		public async Task<IActionResult> UpdateQuantity(int id, int quantity)
-		{
-			await _inventoryService.UpdateQuantity(id, quantity);
-			InventoryDto UserId = await _inventoryService.ListInventory(id);
-
-			return RedirectToAction("Details", new { id = UserId.UserId});
-		}
-	}
+            return RedirectToAction("Details", new { id = UserId.UserId });
+        }
+    }
 }

@@ -148,8 +148,16 @@ namespace SolterraActivities.Services
 			return "active pet updated";
 		}
 
+        //// authenticate user to check login
+        //public async Task<User?> AuthenticateUser(string username, string password)
+        //{
+        //    return await _context.Users
+        //        .FirstOrDefaultAsync(u => u.Username == username && u.Password == password);
+        //}
 
-	}
+
+
+    }
 }
 
 

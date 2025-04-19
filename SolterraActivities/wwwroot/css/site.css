@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 html {
   font-size: 14px;
 }
@@ -12,11 +14,45 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+.nav-link text {
+    color: #EDF4ED !important;
+}
+
+
+.btn-primary {
+    --bs-btn-color: #EDF4ED !important;
+    --bs-btn-bg: #38915A !important;
+    --bs-btn-border-color: #38915A !important;
+    --bs-btn-hover-color: #EDF4ED !important;
+    --bs-btn-hover-bg: #68B184 !important;
+    --bs-btn-hover-border-color: #68B184 !important;
+    --bs-btn-active-color: #EDF4ED !important;
+    --bs-btn-active-bg: #38915A !important;
+    --bs-btn-active-border-color: #38915A !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+}
 html {
   position: relative;
   min-height: 100%;
 }
 
+body.bg-light {
+    margin-bottom: 60px;
+    background-color: #EDF4ED !important;
+    color: #51291E !important;
+    font-family: "Nunito", sans-serif;
+}
+
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #EDF4ED !important;
+    color: #51291E !important;
+    font-family: "Nunito", sans-serif;
+}
+
+
+.navbar-brand, .card-title {
+    color: #38915A !important;
+    font-family: "Sour Gummy", sans-serif;
 }

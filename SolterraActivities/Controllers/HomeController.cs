@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SolterraActivities.Models;
 using SolterraActivities.Models.ViewModels;
@@ -5,6 +6,7 @@ using System.Diagnostics;
 
 namespace SolterraActivities.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

@@ -29,5 +29,9 @@ namespace SolterraActivities.Interfaces
 
 		Task<string> DeleteUser(int id);
 
-	}
+        //// authenticate user
+        //Task<User?> AuthenticateUser(string username, string password);
+
+
+    }
 }

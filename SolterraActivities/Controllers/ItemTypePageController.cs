@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SolterraActivities.Interfaces;
 using SolterraActivities.Models;
 
@@ -19,9 +20,11 @@ namespace SolterraActivities.Controllers
 		}
 
 
-		// List
+        // List
+        [HttpGet]
+        [Authorize]
 
-		public async Task<IActionResult> List()
+        public async Task<IActionResult> List()
 		{
 
 			IEnumerable<ItemType> ItemTypes = await _itemTypeService.GetItemTypes(); // Get ItemTypes from ItemType Service
@@ -29,22 +32,28 @@ namespace SolterraActivities.Controllers
 			return View(ItemTypes);
 		}
 
-		// New (Create)
+        // New (Create)
+        [HttpGet]
+        [Authorize]
 
-		public IActionResult New()
+        public IActionResult New()
 		{
 			return View();
 		}
 
-		public async Task<IActionResult> Create(string type)
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Create(string type)
 		{
 			await _itemTypeService.CreateItemType(type);
 			return RedirectToAction("List");
 		}
 
-		// Details
+        // Details
+        [HttpGet]
+        [Authorize]
 
-		public async Task<IActionResult> Details(int Id)
+        public async Task<IActionResult> Details(int Id)
 		{
 
 			ItemType itemType = await _itemTypeService.GetItemType(Id);
@@ -84,9 +93,11 @@ namespace SolterraActivities.Controllers
 			return View(itemTypes);
 		}
 
-		// Delete
+        // Delete
+        [HttpGet]
+        [Authorize]
 
-		public async Task<IActionResult> ConfirmDelete(int Id)
+        public async Task<IActionResult> ConfirmDelete(int Id)
 		{
 
 			ItemType itemType = await _itemTypeService.GetItemType(Id);
@@ -94,19 +105,25 @@ namespace SolterraActivities.Controllers
 			return View(itemType);
 		}
 
-		public async Task<IActionResult> Delete(int Id)
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Delete(int Id)
 		{
 			await _itemTypeService.DeleteItemType(Id);
 			return RedirectToAction("List");
 		}
-		// Edit
+        // Edit
+        [HttpGet]
+        [Authorize]
 
-		public IActionResult Edit()
+        public IActionResult Edit()
 		{
 			return View();
 		}
 
-		public async Task<IActionResult> EditItemType(int id, string type)
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> EditItemType(int id, string type)
 		{
 			await _itemTypeService.EditItemType(id, type);
 			return RedirectToAction("List");

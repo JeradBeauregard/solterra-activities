@@ -28,6 +28,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/Activity/List -> [{ActivityDto},{ActivityDto},..]
         /// </example>
         [HttpGet("List")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<ActivityDto>>> ListActivities()
         {
             var activities = await _activityService.ListActivities();
@@ -50,6 +51,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/Activity/Find/1 -> {ActivityDto}
         /// </example>
         [HttpGet("Find/{id}")]
+        [Authorize]
         public async Task<ActionResult<ActivityDto>> FindActivity(int id)
         {
             var activity = await _activityService.FindActivity(id);

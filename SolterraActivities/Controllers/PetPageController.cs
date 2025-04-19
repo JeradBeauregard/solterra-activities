@@ -1,4 +1,5 @@
 ﻿using AspNetCoreGeneratedDocument;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using SolterraActivities.Interfaces;
@@ -22,16 +23,20 @@ namespace SolterraActivities.Controllers
 			_moodService = moodService;
 			_userService = userService;
 		}
-		// GET: PetPage/List
-		public async Task<IActionResult> List()
+        // GET: PetPage/List
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> List()
 		{
 			IEnumerable<Pet> pets = await _petService.ListPets();
 
 			return View(pets);
 		}
 
-		// GET: PetPage/Details
-		public async Task<IActionResult> Details(int id)
+        // GET: PetPage/Details
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> Details(int id)
 		{
 			Pet pet = await _petService.ListPet(id);
 
@@ -62,8 +67,10 @@ namespace SolterraActivities.Controllers
 			return View(petDetails);
 		}
 
-		// GET: PetPage/New
-		public async Task<IActionResult> New()
+        // GET: PetPage/New
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> New()
 		{
 			PetViewModels.PetNew petNew = new PetViewModels.PetNew();
 
@@ -89,16 +96,20 @@ namespace SolterraActivities.Controllers
 			return View(petNew);
 		}
 
-		// POST: PetPage/Create
+        // POST: PetPage/Create
+        [HttpPost]
+        [Authorize]
 
-		public async Task<IActionResult> Create( string name, int userId, int species_id, int level, int health, int strength, int agility, int intelligence, int defence, int hunger, string mood)
+        public async Task<IActionResult> Create( string name, int userId, int species_id, int level, int health, int strength, int agility, int intelligence, int defence, int hunger, string mood)
 		{
 			Pet pet = await _petService.CreatePetAdmin(name,userId,species_id, level, health, strength, agility,  intelligence, defence,  hunger,  mood);
 			return RedirectToAction("List");
 		}
 
-		// GET: PetPage/Edit
-		public async Task<IActionResult> Edit(int id)
+        // GET: PetPage/Edit
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> Edit(int id)
 		{
 			PetViewModels.PetEdit petUpdate = new PetViewModels.PetEdit();
 
@@ -133,15 +144,19 @@ namespace SolterraActivities.Controllers
 			return View(petUpdate);
 		}
 
-		// POST: PetPage/Update	
-		public async Task<IActionResult> Update(int id, string name, int userId, int species_id, int level, int health, int strength, int agility, int intelligence, int defence, int hunger, string mood)
+        // POST: PetPage/Update	
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Update(int id, string name, int userId, int species_id, int level, int health, int strength, int agility, int intelligence, int defence, int hunger, string mood)
 		{
 			Pet pet = await _petService.UpdatePetAdmin(id, name, userId, species_id, level, health, strength, agility, intelligence, defence, hunger, mood);
 			return RedirectToAction("List");
 		}
 
-		// GET: PetPage/ConfirmDelete
-		public async Task<IActionResult> ConfirmDelete(int id)
+        // GET: PetPage/ConfirmDelete
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> ConfirmDelete(int id)
 		{
 			Pet pet = await _petService.ListPet(id);
 			
@@ -149,8 +164,10 @@ namespace SolterraActivities.Controllers
 		}
 
 
-		// DELETE: PetPage/Delete
-		public async Task<IActionResult> Delete(int id) {
+        // DELETE: PetPage/Delete
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Delete(int id) {
 
 			string result = await _petService.DeletePet(id);
 			return RedirectToAction("List");

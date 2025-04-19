@@ -30,6 +30,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/Hobby/List -> [{HobbyDto},{HobbyDto},..]
         /// </example>
         [HttpGet(template: "List")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<HobbyDto>>> ListHobbies()
         {
             IEnumerable<HobbyDto> hobbyDtos = await _hobbyService.ListHobbies();
@@ -51,6 +52,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/Hobby/Find/1 -> {HobbyDto}
         /// </example>
         [HttpGet(template: "Find/{id}")]
+        [Authorize]
         public async Task<ActionResult<HobbyDto>> FindHobby(int id)
         {
             var hobby = await _hobbyService.FindHobby(id);
@@ -78,6 +80,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/Hobby/Activities/3 -> [{ActivityDto},{ActivityDto},..]
         /// </example>
         [HttpGet(template: "Activities/{hobbyId}")]
+        [Authorize]
         public async Task<IActionResult> ListActivitiesForHobby(int hobbyId)
         {
             IEnumerable<ActivityDto> ActivityDtos = await _hobbyService.ListActivitiesForHobby(hobbyId);

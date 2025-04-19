@@ -29,6 +29,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/Mood/List -> [{MoodDto},{MoodDto},..]
         /// </example>
         [HttpGet("List")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<MoodDto>>> ListMoods()
         {
             var moods = await _moodService.ListMoods();
@@ -49,6 +50,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/Mood/Find/1 -> {MoodDto}
         /// </example>
         [HttpGet("Find/{id}")]
+        [Authorize]
         public async Task<ActionResult<MoodDto>> FindMood(int id)
         {
             var mood = await _moodService.FindMood(id);
@@ -73,6 +75,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/Mood/Activities/3 -> [{ActivityDto},{ActivityDto},..]
         /// </example>
         [HttpGet("Activities/{moodId}")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<ActivityDto>>> ListActivitiesForMood(int moodId)
         {
             var activities = await _moodService.ListActivitiesForMood(moodId);

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Client;
 using SolterraActivities.Interfaces;
 using SolterraActivities.Models;
@@ -23,9 +24,11 @@ namespace SolterraActivities.Controllers
 
 
 
-		// List
+        // List
+        [HttpGet]
+        [Authorize]
 
-		public async Task<IActionResult> List()
+        public async Task<IActionResult> List()
 		{
 
 			IEnumerable<Item> Items = await _itemService.GetItems(); // Get Items from Item Service
@@ -33,14 +36,19 @@ namespace SolterraActivities.Controllers
 			return View(Items);
 		}
 
-		// New (Create)
+        // New (Create)
+        [HttpGet]
+        [Authorize]
 
-		public IActionResult New()
+        public IActionResult New()
 		{
 			return View();
 		}
 
-		public async Task<IActionResult> Create(string name, string description, int value)
+        [HttpPost]
+        [Authorize]
+
+        public async Task<IActionResult> Create(string name, string description, int value)
 		{
 			await _itemService.CreateItem(name, description, value);
 			return RedirectToAction("List");
@@ -48,9 +56,11 @@ namespace SolterraActivities.Controllers
 		}
 
 
-		// Details
+        // Details
+        [HttpGet]
+        [Authorize]
 
-		public async Task<IActionResult> Details(int Id)
+        public async Task<IActionResult> Details(int Id)
 		{
 			ItemDto item = await _itemService.GetItem(Id);
 
@@ -81,76 +91,98 @@ namespace SolterraActivities.Controllers
 			return View(itemDetails);
 		}
 
-		// switch isConsumable to true or false
+        // switch isConsumable to true or false
+        [HttpPost]
+        [Authorize]
 
-		public async Task<IActionResult> SwitchIsConsumable(int itemId)
+        public async Task<IActionResult> SwitchIsConsumable(int itemId)
 		{
 			await _itemService.SwitchIsConsumable(itemId);
 			return RedirectToAction("Details", new { id = itemId });
 		}
 
-		// item effects
+        // item effects
+        [HttpPost]
+        [Authorize]
 
-		public async Task<IActionResult> AddItemEffect(int itemId, string statToAffect, int amount)
+        public async Task<IActionResult> AddItemEffect(int itemId, string statToAffect, int amount)
 		{
 			await _itemEffectService.AddItemEffect(itemId,statToAffect,amount);
 			return RedirectToAction("Details", new { id = itemId });
 		}
-		public async Task<IActionResult> UpdateItemEffect(int id, int itemId, string statToAffect, int amount)
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> UpdateItemEffect(int id, int itemId, string statToAffect, int amount)
 		{
 			await _itemEffectService.UpdateItemEffect(id, itemId, statToAffect, amount);
 			return RedirectToAction("Details", new { id = itemId });
 		}
-		public async Task<IActionResult> DeleteItemEffect(int effectId ,int itemId)
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> DeleteItemEffect(int effectId ,int itemId)
 		{
 			await _itemEffectService.DeleteItemEffect(effectId);
 			return RedirectToAction("Details", new { id = itemId });
 		}
-		//<a href="/ItemPage/DeleteItemEffect?effectId=@effect.Id&itemId=@item.Id">Delete</a>
+        //<a href="/ItemPage/DeleteItemEffect?effectId=@effect.Id&itemId=@item.Id">Delete</a>
 
 
 
 
-		// link and unlink
+        // link and unlink
 
-		public async Task<IActionResult> LinkItemToType(int itemId, int typeId)
+        [HttpPost]
+        [Authorize]
+
+        public async Task<IActionResult> LinkItemToType(int itemId, int typeId)
 		{
 			await _itemService.LinkItemToType(itemId, typeId);
 			return RedirectToAction("Details", new { id = itemId });
 		}
 
-		public async Task<IActionResult> UnlinkItemFromType(int itemId, int typeId)
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> UnlinkItemFromType(int itemId, int typeId)
 		{
 			await _itemService.UnlinkItemToType(itemId, typeId);
 			return RedirectToAction("Details", new { id = itemId });
 		}
 
-		// Delete
+        // Delete
+        [HttpGet]
+        [Authorize]
 
-		public async Task<IActionResult> ConfirmDelete(int Id)
+        public async Task<IActionResult> ConfirmDelete(int Id)
 		{
 			ItemDto item = await _itemService.GetItem(Id);
 			return View(item);
 			
 		}
 
-		public async Task<IActionResult> Delete(int Id)
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Delete(int Id)
 		{
 			await _itemService.DeleteItem(Id);
 			return RedirectToAction("List");
 		}
-		// Edit
+        // Edit
 
-		
 
-		public async Task<IActionResult> Edit(int id)
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> Edit(int id)
 		{
 
 			ItemDto item = await _itemService.GetItem(id);
 			return View(item);
 		}
 
-		public async Task<IActionResult> EditItem(int id, string name, string description, int value,IFormFile image )
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> EditItem(int id, string name, string description, int value,IFormFile image )
 		{
 			await _itemService.EditItem(id, name, description, value);
 			await _itemService.AddItemImage(id, image);

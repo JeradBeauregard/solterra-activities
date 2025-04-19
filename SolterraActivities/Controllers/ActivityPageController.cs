@@ -42,6 +42,7 @@ namespace SolterraActivities.Controllers
 
         // GET: ActivityPage/Details/{id}
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Details(int id)
         {
             ActivityDto? activity = await _activityService.FindActivity(id);

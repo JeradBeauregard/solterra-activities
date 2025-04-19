@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\SolterraActivities.csproj": {}
+    "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\SolterraActivities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\SolterraActivities.csproj": {
+    "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\SolterraActivities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\SolterraActivities.csproj",
+        "projectUniqueName": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\SolterraActivities.csproj",
         "projectName": "SolterraActivities",
-        "projectPath": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\SolterraActivities.csproj",
-        "packagesPath": "C:\\Users\\jerad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jerad\\Desktop\\solterra-activities\\SolterraActivities\\obj\\",
+        "projectPath": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\SolterraActivities.csproj",
+        "packagesPath": "C:\\Users\\gbrll\\.nuget\\packages\\",
+        "outputPath": "D:\\webdev-projects\\solterra-activities-final\\solterra-activities\\SolterraActivities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jerad\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\gbrll\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +40,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -56,19 +52,29 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -94,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SolterraActivities.Models;
 using SolterraActivities.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SolterraActivities.Controllers
 {
@@ -25,7 +26,8 @@ namespace SolterraActivities.Controllers
 		/// </example>
 		/// <returns>A List of pet objects</returns>
 		[HttpGet("List")]
-		public async Task<IEnumerable<Pet>> ListPets()
+        [Authorize]
+        public async Task<IEnumerable<Pet>> ListPets()
 		{
 			return await _petService.ListPets();
 		}
@@ -44,7 +46,8 @@ namespace SolterraActivities.Controllers
 		/// <returns>A list of pet objects</returns>
 		/// 
 		[HttpGet("ListUserPets")]
-		public async Task<IEnumerable<PetDto>> ListUserPets(int userId)
+        [Authorize]
+        public async Task<IEnumerable<PetDto>> ListUserPets(int userId)
 		{
 			return await _petService.ListUserPets(userId);
 		}
@@ -61,7 +64,8 @@ namespace SolterraActivities.Controllers
 		/// for admin use, can manipulate all stats
 		/// </summary>
 		[HttpPost("CreatePetAdmin")]
-		public async Task<Pet> CreatePetAdmin(string name, int userId, int species_id, int level, int health, int strength, int agility, int intelligence, int defence, int hunger, string mood)
+        [Authorize]
+        public async Task<Pet> CreatePetAdmin(string name, int userId, int species_id, int level, int health, int strength, int agility, int intelligence, int defence, int hunger, string mood)
 		{
 			return await _petService.CreatePetAdmin(name, userId, species_id, level, health, strength, agility, intelligence, defence, hunger, mood);
 
@@ -79,7 +83,8 @@ namespace SolterraActivities.Controllers
 		/// <param name="species_id"></param>
 		/// <returns>The created pet object</returns>
 		[HttpPost("CreatePetUser")]
-		public async Task<Pet> CreatePetUser(string name, int userId, int species_id)
+        [Authorize]
+        public async Task<Pet> CreatePetUser(string name, int userId, int species_id)
 		{
 			return await _petService.CreatePetUser(name, userId, species_id);
 		}
@@ -105,7 +110,8 @@ namespace SolterraActivities.Controllers
 		/// <param name="mood"></param>
 		/// <returns>Returns updated pet object</returns>
 		[HttpPut("UpdatePetAdmin")]
-		public async Task<Pet> UpdatePetAdmin(int id, string name, int userId, int species_id, int level, int health, int strength, int agility, int intelligence, int defence, int hunger, string mood)
+        [Authorize]
+        public async Task<Pet> UpdatePetAdmin(int id, string name, int userId, int species_id, int level, int health, int strength, int agility, int intelligence, int defence, int hunger, string mood)
 		{
 			return await _petService.UpdatePetAdmin(id, name, userId, species_id, level, health, strength, agility, intelligence, defence, hunger, mood);
 		}
@@ -121,7 +127,8 @@ namespace SolterraActivities.Controllers
 		/// <param name="id"></param>
 		/// <returns>Returns deletion status message</returns>
 		[HttpDelete("DeletePet")]
-		public async Task<string> DeletePet(int id)
+        [Authorize]
+        public async Task<string> DeletePet(int id)
 		{
 			var pet = await _petService.ListPet(id);
 			if (pet == null)

@@ -23,6 +23,8 @@ namespace SolterraActivities.Controllers
         }
 
         // GET: MoodPage/List
+        [HttpGet]
+        [Authorize]
         public async Task<IActionResult> List()
         {
             IEnumerable<MoodDto?> moodDtos = await _moodService.ListMoods();
@@ -31,6 +33,7 @@ namespace SolterraActivities.Controllers
 
         // GET: MoodPage/Details/{id}
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Details(int id)
         {
             MoodDto? moodDto = await _moodService.FindMood(id);
@@ -51,6 +54,7 @@ namespace SolterraActivities.Controllers
         }
 
         // GET: MoodPage/New
+        [HttpGet]
         [Authorize]
         public ActionResult New()
         {

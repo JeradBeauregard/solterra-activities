@@ -29,12 +29,16 @@ namespace SolterraActivities.Controllers
             _itemService = itemService;
         }
 
+        [HttpGet]
+        [Authorize]
         public IActionResult Index()
         {
             return RedirectToAction("List");
         }
 
         // GET: UserActivityPage/List
+        [HttpGet]
+        [Authorize]
         public async Task<IActionResult> List()
         {
             var userActivities = await _userActivityService.ListUserActivities();
@@ -43,6 +47,7 @@ namespace SolterraActivities.Controllers
 
         // GET: UserActivityPage/Details/{id}
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Details(int id)
         {
             var userActivity = await _userActivityService.FindUserActivity(id);
@@ -55,6 +60,7 @@ namespace SolterraActivities.Controllers
         }
 
         // GET: UserActivityPage/New
+        [HttpGet]
         [Authorize]
         public async Task<IActionResult> New()
         {
@@ -74,7 +80,7 @@ namespace SolterraActivities.Controllers
                 AllActivities = activities.Select(a => new SelectListItem
                 {
                     Value = a.ActivityId.ToString(),
-                    Text = a.ActivityName  
+                    Text = a.ActivityName
                 }),
 
                 AllPets = pets.Select(p => new SelectListItem
@@ -92,7 +98,6 @@ namespace SolterraActivities.Controllers
 
             return View(options);
         }
-
 
         // POST: UserActivityPage/Add
         [HttpPost]
@@ -128,30 +133,29 @@ namespace SolterraActivities.Controllers
             UserActivityEdit options = new()
             {
                 UserActivity = userActivity,
-				AllUsers = users.Select(u => new SelectListItem
-				{
-					Value = u.Id.ToString(),
-					Text = u.Username
-				}),
-
-				AllActivities = activities.Select(a => new SelectListItem
+                AllUsers = users.Select(u => new SelectListItem
                 {
-                    Value = a.ActivityId.ToString(),   
-                    Text = a.ActivityName              
+                    Value = u.Id.ToString(),
+                    Text = u.Username
                 }),
-				AllPets = pets.Select(p => new SelectListItem
-				{
-					Value = p.Id.ToString(),
-					Text = p.Name
-				}),
 
-				AllItems = items.Select(i => new SelectListItem // convert items list to select list, with item id as value and item name as text... missing other details
-				{
-					Value = i.Id.ToString(),
-					Text = i.Name
-				})
+                AllActivities = activities.Select(a => new SelectListItem
+                {
+                    Value = a.ActivityId.ToString(),
+                    Text = a.ActivityName
+                }),
+                AllPets = pets.Select(p => new SelectListItem
+                {
+                    Value = p.Id.ToString(),
+                    Text = p.Name
+                }),
 
-			};
+                AllItems = items.Select(i => new SelectListItem
+                {
+                    Value = i.Id.ToString(),
+                    Text = i.Name
+                })
+            };
 
             return View(options);
         }

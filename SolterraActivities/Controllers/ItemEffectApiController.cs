@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SolterraActivities.Interfaces;
 using SolterraActivities.Models;
 using System.Collections.Generic;
@@ -23,7 +24,8 @@ namespace SolterraActivities.Controllers
 		/// <param name="itemId">Item ID</param>
 		/// <returns>A list of item effects for the specified item.</returns>
 		[HttpGet("GetItemEffects/{itemId}")]
-		public async Task<IActionResult> GetItemEffects(int itemId)
+        [Authorize]
+        public async Task<IActionResult> GetItemEffects(int itemId)
 		{
 			var itemEffects = await _itemEffectService.GetItemEffects(itemId);
 			return Ok(itemEffects);
@@ -37,7 +39,8 @@ namespace SolterraActivities.Controllers
 		/// <param name="amount">Amount of effect</param>
 		/// <returns>Status message</returns>
 		[HttpPost("AddItemEffect/{itemId}")]
-		public async Task<IActionResult> AddItemEffect(int itemId, string statToAffect, int amount)
+        [Authorize]
+        public async Task<IActionResult> AddItemEffect(int itemId, string statToAffect, int amount)
 		{
 			var result = await _itemEffectService.AddItemEffect(itemId, statToAffect, amount);
 			return Ok(result);
@@ -52,7 +55,8 @@ namespace SolterraActivities.Controllers
 		/// <param name="amount">Amount</param>
 		/// <returns>Status message</returns>
 		[HttpPut("UpdateItemEffect/{itemEffectId}")]
-		public async Task<IActionResult> UpdateItemEffect(int itemEffectId, int itemId, string statToAffect, int amount)
+        [Authorize]
+        public async Task<IActionResult> UpdateItemEffect(int itemEffectId, int itemId, string statToAffect, int amount)
 		{
 			var result = await _itemEffectService.UpdateItemEffect(itemEffectId, itemId, statToAffect, amount);
 			return Ok(result);
@@ -64,7 +68,8 @@ namespace SolterraActivities.Controllers
 		/// <param name="itemEffectId">ItemEffect ID</param>
 		/// <returns>Status message</returns>
 		[HttpDelete("DeleteItemEffect/{itemEffectId}")]
-		public async Task<IActionResult> DeleteItemEffect(int itemEffectId)
+        [Authorize]
+        public async Task<IActionResult> DeleteItemEffect(int itemEffectId)
 		{
 			var result = await _itemEffectService.DeleteItemEffect(itemEffectId);
 			return Ok(result);

@@ -28,6 +28,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/UserActivity/List -> [{UserActivityDto},{UserActivityDto},...]
         /// </example>
         [HttpGet("List")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<UserActivityDto>>> ListUserActivities()
         {
             var results = await _userActivityService.ListUserActivities();
@@ -48,6 +49,7 @@ namespace SolterraActivities.Controllers
         /// GET: api/UserActivity/Find/5 -> {UserActivityDto}
         /// </example>
         [HttpGet("Find/{id}")]
+        [Authorize]
         public async Task<ActionResult<UserActivityDto>> FindUserActivity(int id)
         {
             var dto = await _userActivityService.FindUserActivity(id);
@@ -169,6 +171,7 @@ namespace SolterraActivities.Controllers
         /// -> [{UserActivityDto},{UserActivityDto},...]
         /// </example>
         [HttpGet("ListForUser/{userId}")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<UserActivityDto>>> ListUserActivitiesForUser(int userId)
         {
             var results = await _userActivityService.ListUserActivitiesForUser(userId);

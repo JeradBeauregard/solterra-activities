@@ -40,6 +40,7 @@ namespace SolterraActivities.Controllers
 
         // GET: HobbyPage/Details/{id}
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Details(int id)
         {
             HobbyDto? hobby = await _hobbyService.FindHobby(id);
@@ -73,6 +74,7 @@ namespace SolterraActivities.Controllers
 
         // POST: HobbyPage/Add
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Add(HobbyDto hobbyDto)
         {
             ServiceResponse response = await _hobbyService.AddHobby(hobbyDto);
@@ -89,6 +91,7 @@ namespace SolterraActivities.Controllers
 
         // GET: HobbyPage/Edit/{id}
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Edit(int id)
         {
             HobbyDto? hobby = await _hobbyService.FindHobby(id);
@@ -102,6 +105,7 @@ namespace SolterraActivities.Controllers
 
         // POST: HobbyPage/Update/{id}
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Update(int id, HobbyDto hobbyDto)
         {
             if (id != hobbyDto.HobbyId)  
@@ -125,6 +129,7 @@ namespace SolterraActivities.Controllers
 
         // GET: HobbyPage/ConfirmDelete/{id}
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> ConfirmDelete(int id)
         {
             HobbyDto? hobbyDto = await _hobbyService.FindHobby(id);
@@ -157,6 +162,7 @@ namespace SolterraActivities.Controllers
 
         // POST: HobbyPage/LinkToActivity
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> LinkToActivity([FromForm] int hobbyId, [FromForm] int ActivityId)
         {
             await _hobbyService.LinkHobbyToActivity(hobbyId, ActivityId);
@@ -166,6 +172,7 @@ namespace SolterraActivities.Controllers
 
         // POST: HobbyPage/UnlinkFromActivity
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> UnlinkFromActivity([FromForm] int hobbyId, [FromForm] int ActivityId)
         {
             await _hobbyService.UnlinkHobbyFromActivity(hobbyId, ActivityId);
